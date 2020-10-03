@@ -98,6 +98,8 @@ body
     margin-bottom: auto;
 }
 .header_image img{
+    display: inline-block;
+    object-fit: cover;
     margin-right: 1rem;
     height: 4rem;
     width: 4rem;
@@ -123,15 +125,20 @@ body
     width: 90%;
     margin-left: 3%;
     margin-top: 1%;
+    height: 7%; 
+    
 }
 h2{
     font-weight: 700;
 }
-
+h3{
+    font-weight: 700;
+    font-size: 1.7rem;
+}
 p{
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     font-weight: 600;
-    color: rgba(128, 128, 128, 0.7);
+    color: rgba(128, 128, 128, 0.9);
 }
 /*==================Table properties================*/
 
@@ -160,6 +167,13 @@ td{
 .action2{
     margin: auto 1rem auto auto;
 }
+.btn{
+    padding-left: 2rem; 
+    padding-right: 2rem;
+    padding-top: 0.57rem;
+    padding-bottom: 0.57rem;
+    border-radius: 10px;
+}
 .btn:disabled{opacity:1}
 /*==================pagination================*/
 .page-link{
@@ -169,3 +183,27 @@ td{
 .active .page-link{
     background-color: black;
 }
+
+/*==================view users================*/
+.container{
+    width: 90%;
+    margin-left: 3%;
+    margin-top: 2%;
+    height: auto;
+}
+.profile_image{
+    display: inline-block;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.info{
+    list-style: none;
+}
+.info p{
+    line-height: 1.2;
+    margin: 0;
+}
+
