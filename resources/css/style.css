@@ -131,7 +131,7 @@ h2{
 p{
     font-size: 1.3rem;
     font-weight: 600;
-    color: gray;
+    color: rgba(128, 128, 128, 0.7);
 }
 /*==================Table properties================*/
 
@@ -148,10 +148,11 @@ tr{
 td{
     font-size: 1.3rem;
     font-weight: 600;
-    color: gray;
+    color: rgba(128, 128, 128, 0.7);
 }
 .status{
     margin: auto 3rem;
+    cursor:default;
 }
 .action1{
     margin: auto auto auto 1rem;
@@ -159,9 +160,11 @@ td{
 .action2{
     margin: auto 1rem auto auto;
 }
+.btn:disabled{opacity:1}
 /*==================pagination================*/
 .page-link{
     border-radius: 5px;
+    border: transparent;
 }
 .active .page-link{
     background-color: black;

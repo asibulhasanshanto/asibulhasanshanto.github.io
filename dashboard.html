@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+       <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+        
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+        <link rel="stylesheet" href="resources/css/style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <title>Admin dashboard</title>
+    </head>
+    <body>
+        <section class="navigation">
+            <div class="sidebar">
+                <a href="dashboard.html" class="sidenav_link active">
+<!--
+                        <svg class="side_nav_icon">
+                            <use href="resources/icons/people.svg">
+                            </use>
+                        </svg>
+--> 
+                        <ion-icon name="analytics"></ion-icon>
+                        <span>Dashboard</span>
+                </a>
+                <a href="users.html" class="sidenav_link ">
+                        <ion-icon name="people"></ion-icon>
+                        <span>Users</span>
+                </a>
+                <a href="transactions.html" class="sidenav_link ">
+                        <ion-icon name="newspaper"></ion-icon>
+                        <span>transactions</span>
+                </a>
+                <a href="withdraws.html" class="sidenav_link ">
+                        <ion-icon name="cash"></ion-icon>
+                        <span>Withdraws</span>
+                </a>
+                <a href="#" class="sidenav_link ">
+                        <ion-icon name="wallet"></ion-icon>
+                        <span>Payments</span>
+                </a>
+                <a href="#" class="sidenav_link ">
+                        <ion-icon name="card"></ion-icon>
+                        <span>Payment Methods</span>
+                </a>
+                <a href="#" class="sidenav_link ">
+                        <ion-icon name="speedometer"></ion-icon>
+                        <span>Level Setup</span>
+                </a>
+                <a href="#" class="sidenav_link ">
+                        <ion-icon name="help-circle"></ion-icon>
+                        <span>Help Line</span>
+                </a>
+                <a href="#" class="sidenav_link ">
+                        <ion-icon name="settings"></ion-icon>
+                        <span>General Setting</span>
+                </a>
+                <a href="#" class="sidenav_link ">
+                        <ion-icon name="leaf"></ion-icon>   
+                        <span>Add studio</span>
+                </a>
+                <a href="#" class="sidenav_link ">
+                        <ion-icon name="people-circle"></ion-icon>
+                        <span>Circle History</span>
+                </a>
+                <a href="#" class="sidenav_link ">
+                        <ion-icon name="hammer"></ion-icon>
+                        <span>Page setting</span>
+                </a>
+            </div>
+        </section>
+        <section class="page">
+            <div class="header">
+                <div class="header_image">
+                    <img src="resources/img/profile.jpg">
+                </div>
+            </div>
+            <div class="main_container">
+                <canvas id="myChart"></canvas>
+                
+            </div>
+        </section>
+        <script src="resources/js/chart.js">
+            
+        </script>
+    </body>
+</html>
+<!--<ion-icon  name="analytics"></ion-icon>-->

@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
         <link rel="stylesheet" href="resources/css/style.css">
         
-        <title>Users</title>
+        <title>Withdraws</title>
     </head>
     <body>
         <section class="navigation">
@@ -25,15 +25,15 @@
                         <ion-icon name="analytics"></ion-icon>
                         <span>Dashboard</span>
                 </a>
-                <a href="users.html" class="sidenav_link active">
+                <a href="users.html" class="sidenav_link ">
                         <ion-icon name="people"></ion-icon>
                         <span>Users</span>
                 </a>
-                <a href="transactions.html" class="sidenav_link ">
+                <a href="transactions.html" class="sidenav_link">
                         <ion-icon name="newspaper"></ion-icon>
                         <span>transactions</span>
                 </a>
-                <a href="withdraws.html" class="sidenav_link ">
+                <a href="withdraws.html" class="sidenav_link active">
                         <ion-icon name="cash"></ion-icon>
                         <span>Withdraws</span>
                 </a>
@@ -79,163 +79,152 @@
             </div>
             <div class="main_container">
                 <div class="content">
-                    <h2>Users</h2>
+                    <h2>Withdraws</h2>
                     <p>Showing 10 users out of 1000</p>
                     
                     <table class="table table-borderless">
                         <thead>
                             <tr>
-                                <th scope="col">Name</th>
-                                <th scope="col">Email</th>
-                                <th scope="col">Contact No.</th>
-                                <th scope="col">Balance</th>
-                                <th scope="col" class="text-center">Current Level</th>
+                                <th scope="col">Date</th>
+                                <th scope="col">Trx ID</th>
+                                <th scope="col">Amount</th>
+                                <th scope="col" class="text-center">Users</th>
+                                <th scope="col" class="text-center">Account No</th>
                                 <th scope="col" class="text-center">Status</th>
                                 <th scope="col" class="text-center">Actions</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>John doe</td>
-                                <td>abcdefghij@gmail.com</td>
-                                <td>+0123456789</td>
-                                <td>5000.00</td>
-                                <td class="text-center">7</td>
+                                <td>1 Jan 2020</td>
+                                <td>45dfrHJO5Jjgi9</td>
+                                <td>500</td>
+                                <td class="text-center">Asibul Hasan</td>
+                                <td>+88017xxxxxxxx</td>
                                 <td class="text-center">
                                     <button class="btn btn-success status" disabled>ACTIVE</button>
                                 </td>
                                 <td class="text-center">
-                                    <button class="btn btn-primary action1">View</button>
-                                    <button class="btn btn-danger action2">BAN</button>
+                                    <button class="btn btn-primary status">VIEW</button>
                                 </td>
                             </tr>
-                            <tr>
-                                <td>John doe</td>
-                                <td>abcdefghij@gmail.com</td>
-                                <td>+0123456789</td>
-                                <td>5000.00</td>
-                                <td class="text-center">7</td>
+                             <tr>
+                                <td>1 Jan 2020</td>
+                                <td>45dfrHJO5Jjgi9</td>
+                                <td>500</td>
+                                <td class="text-center">Asibul Hasan</td>
+                                <td>+88017xxxxxxxx</td>
                                 <td class="text-center">
-                                    <button class="btn btn-warning status" disabled>INACTIVE</button>
+                                    <button class="btn btn-success   status" disabled>ACTIVE</button>
                                 </td>
                                 <td class="text-center">
-                                    <button class="btn btn-primary action1">View</button>
-                                    <button class="btn btn-danger action2">BAN</button>
+                                    <button class="btn btn-primary status">VIEW</button>
                                 </td>
                             </tr>
-                            <tr>
-                                <td>John doe</td>
-                                <td>abcdefghij@gmail.com</td>
-                                <td>+0123456789</td>
-                                <td>5000.00</td>
-                                <td class="text-center">7</td>
+                             <tr>
+                                <td>1 Jan 2020</td>
+                                <td>45dfrHJO5Jjgi9</td>
+                                <td>500</td>
+                                <td class="text-center">Asibul Hasan</td>
+                                <td>+88017xxxxxxxx</td>
                                 <td class="text-center">
                                     <button class="btn btn-success status" disabled>ACTIVE</button>
                                 </td>
                                 <td class="text-center">
-                                    <button class="btn btn-primary action1">View</button>
-                                    <button class="btn btn-danger action2">BAN</button>
+                                    <button class="btn btn-primary status">VIEW</button>
                                 </td>
                             </tr>
-                            <tr>
-                                <td>John doe</td>
-                                <td>abcdefghij@gmail.com</td>
-                                <td>+0123456789</td>
-                                <td>5000.00</td>
-                                <td class="text-center">7</td>
+                             <tr>
+                                <td>1 Jan 2020</td>
+                                <td>45dfrHJO5Jjgi9</td>
+                                <td>500</td>
+                                <td class="text-center">Asibul Hasan</td>
+                                <td>+88017xxxxxxxx</td>
                                 <td class="text-center">
-                                    <button class="btn btn-warning status" disabled>INACTIVE</button>
+                                    <button class="btn btn-warning status" disabled>PENDING</button>
                                 </td>
                                 <td class="text-center">
-                                    <button class="btn btn-primary action1">View</button>
-                                    <button class="btn btn-danger action2">BAN</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>John doe</td>
-                                <td>abcdefghij@gmail.com</td>
-                                <td>+0123456789</td>
-                                <td>5000.00</td>
-                                <td class="text-center">7</td>
-                                <td class="text-center">
-                                    <button class="btn btn-warning status" disabled>INACTIVE</button>
-                                </td>
-                                <td class="text-center">
-                                    <button class="btn btn-primary action1">View</button>
-                                    <button class="btn btn-danger action2">BAN</button>
+                                    <button class="btn btn-primary status">VIEW</button>
                                 </td>
                             </tr>
-                            <tr>
-                                <td>John doe</td>
-                                <td>abcdefghij@gmail.com</td>
-                                <td>+0123456789</td>
-                                <td>5000.00</td>
-                                <td class="text-center">7</td>
+                             <tr>
+                                <td>1 Jan 2020</td>
+                                <td>45dfrHJO5Jjgi9</td>
+                                <td>500</td>
+                                <td class="text-center">Asibul Hasan</td>
+                                <td>+88017xxxxxxxx</td>
+                                <td class="text-center">
+                                    <button class="btn btn-warning status" disabled>PENDING</button>
+                                </td>
+                                <td class="text-center">
+                                    <button class="btn btn-primary status">VIEW</button>
+                                </td>
+                            </tr>
+                             <tr>
+                                <td>1 Jan 2020</td>
+                                <td>45dfrHJO5Jjgi9</td>
+                                <td>500</td>
+                                <td class="text-center">Asibul Hasan</td>
+                                <td>+88017xxxxxxxx</td>
                                 <td class="text-center">
                                     <button class="btn btn-success status" disabled>ACTIVE</button>
                                 </td>
                                 <td class="text-center">
-                                    <button class="btn btn-primary action1">View</button>
-                                    <button class="btn btn-danger action2">BAN</button>
+                                    <button class="btn btn-primary status">VIEW</button>
                                 </td>
                             </tr>
-                            <tr>
-                                <td>John doe</td>
-                                <td>abcdefghij@gmail.com</td>
-                                <td>+0123456789</td>
-                                <td>5000.00</td>
-                                <td class="text-center">7</td>
-                                <td class="text-center">
-                                    <button class="btn btn-danger status" disabled>BANNED</button>
-                                </td>
-                                <td class="text-center">
-                                    <button class="btn btn-primary action1">View</button>
-                                    <button class="btn btn-success action2">UNBAN</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>John doe</td>
-                                <td>abcdefghij@gmail.com</td>
-                                <td>+0123456789</td>
-                                <td>5000.00</td>
-                                <td class="text-center">7</td>
+                             <tr>
+                                <td>1 Jan 2020</td>
+                                <td>45dfrHJO5Jjgi9</td>
+                                <td>500</td>
+                                <td class="text-center">Asibul Hasan</td>
+                                <td>+88017xxxxxxxx</td>
                                 <td class="text-center">
                                     <button class="btn btn-success status" disabled>ACTIVE</button>
                                 </td>
                                 <td class="text-center">
-                                    <button class="btn btn-primary action1">View</button>
-                                    <button class="btn btn-danger action2">BAN</button>
+                                    <button class="btn btn-primary status">VIEW</button>
                                 </td>
                             </tr>
-                            <tr>
-                                <td>John doe</td>
-                                <td>abcdefghij@gmail.com</td>
-                                <td>+0123456789</td>
-                                <td>5000.00</td>
-                                <td class="text-center">7</td>
+                             <tr>
+                                <td>1 Jan 2020</td>
+                                <td>45dfrHJO5Jjgi9</td>
+                                <td>500</td>
+                                <td class="text-center">Asibul Hasan</td>
+                                <td>+88017xxxxxxxx</td>
                                 <td class="text-center">
                                     <button class="btn btn-success status" disabled>ACTIVE</button>
                                 </td>
                                 <td class="text-center">
-                                    <button class="btn btn-primary action1">View</button>
-                                    <button class="btn btn-danger action2">BAN</button>
+                                    <button class="btn btn-primary status">VIEW</button>
                                 </td>
                             </tr>
-                            <tr>
-                                <td>John doe</td>
-                                <td>abcdefghij@gmail.com</td>
-                                <td>+0123456789</td>
-                                <td>5000.00</td>
-                                <td class="text-center">7</td>
+                             <tr>
+                                <td>1 Jan 2020</td>
+                                <td>45dfrHJO5Jjgi9</td>
+                                <td>500</td>
+                                <td class="text-center">Asibul Hasan</td>
+                                <td>+88017xxxxxxxx</td>
+                                <td class="text-center">
+                                    <button class="btn btn-warning status" disabled>PENDING</button>
+                                </td>
+                                <td class="text-center">
+                                    <button class="btn btn-primary status">VIEW</button>
+                                </td>
+                            </tr>
+                             <tr>
+                                <td>1 Jan 2020</td>
+                                <td>45dfrHJO5Jjgi9</td>
+                                <td>500</td>
+                                <td class="text-center" >Asibul Hasan</td>
+                                <td>+88017xxxxxxxx</td>
                                 <td class="text-center">
                                     <button class="btn btn-success status" disabled>ACTIVE</button>
                                 </td>
                                 <td class="text-center">
-                                    <button class="btn btn-primary action1">View</button>
-                                    <button class="btn btn-danger action2">BAN</button>
+                                    <button class="btn btn-primary status">VIEW</button>
                                 </td>
                             </tr>
-                            
                             
                         </tbody>
                     </table>
