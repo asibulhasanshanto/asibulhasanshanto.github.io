@@ -30,7 +30,8 @@ body
 {
     width: 25%;
     background: linear-gradient(#339dfa, #1980e1);
-    height: 100vh;
+    min-height: 100vh;
+    height: stretch;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -119,24 +120,20 @@ body
     background: white;
 }
 .content{
-/*    background: black;*/
     width: 90%;
     margin-left: 3%;
     margin-top: 1%;
 }
-/*==================Users page================*/
 h2{
     font-weight: 700;
-/*    font-style:bold;*/
 }
+
 p{
     font-size: 1.3rem;
     font-weight: 600;
     color: gray;
 }
-.boarder{
-    border-top: 0;
-}
+/*==================Table properties================*/
 
 th
 {
@@ -161,4 +158,11 @@ td{
 }
 .action2{
     margin: auto 1rem auto auto;
+}
+/*==================pagination================*/
+.page-link{
+    border-radius: 5px;
+}
+.active .page-link{
+    background-color: black;
 }
