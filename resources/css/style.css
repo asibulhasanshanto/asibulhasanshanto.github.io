@@ -28,7 +28,7 @@ body
 --------------------------------------------------*/
 .navigation
 {
-    width: 25%;
+    width: 22%;
     background: linear-gradient(#339dfa, #1980e1);
     min-height: 100vh;
     height: stretch;
@@ -91,6 +91,7 @@ body
     background: white;
     height: 8%;
     flex-shrink: 0;
+    
 }
 .header_image{
     display: inline-block;
@@ -110,7 +111,7 @@ body
 ------------content-------------------------
 --------------------------------------------------*/
 .page{
-    width: 75%;
+    width: 78%;
 }
 
 .main_container{
@@ -130,6 +131,7 @@ body
 }
 h2{
     font-weight: 700;
+    font-size: 1.8rem;
 }
 h3{
     font-weight: 700;
@@ -153,7 +155,7 @@ tr{
     border-bottom: 2px solid rgba(128, 128, 128, 0.3);
 }
 td{
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     font-weight: 600;
     color: rgba(128, 128, 128, 0.7);
 }
@@ -206,4 +208,5 @@ td{
     line-height: 1.2;
     margin: 0;
 }
+
 
