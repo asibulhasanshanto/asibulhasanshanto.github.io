@@ -126,7 +126,8 @@ body
     width: 90%;
     margin-left: 3%;
     margin-top: 1%;
-    height: 7%; 
+    min-height: 7%; 
+/*    background: black;*/
     
 }
 h2{
@@ -135,7 +136,7 @@ h2{
 }
 h3{
     font-weight: 700;
-    font-size: 1.7rem;
+    font-size: 1.6rem;
 }
 p{
     font-size: 1.4rem;
@@ -186,7 +187,7 @@ td{
     background-color: black;
 }
 
-/*==================view users================*/
+/*==================view================*/
 .container{
     width: 90%;
     margin-left: 3%;
@@ -209,4 +210,46 @@ td{
     margin: 0;
 }
 
-
+/*==================Level setup================*/
+.btn-group-level_setup{
+    width: 90%;
+    margin:2rem 8% 1rem 4%;
+    display: inline-block;
+}
+.btn-level_setup{
+    background: #d7dcde;
+    width: 49.5%;
+    height: 4rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.75;
+    border-radius: 5px;
+    margin: auto 0px;
+}
+.btn_active,
+.btn_active:hover{
+    color: white;
+    background: #1980e1;
+}
+.system_variable{
+    margin: auto;
+    
+}
+.system_variable p{
+    font-size: 1.5rem;
+    
+}
+.form-text{
+    font-size: 1.2rem;
+}
+.input{
+    font-size: 1.5rem;
+    border-radius: 10px;
+    padding-top: auto;
+    padding-bottom: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+#level_arc{
+    display: none;
+}

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--        icons-->
+        <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+<!--        fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+<!--        chart-->
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+<!--        bootstrap-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<!--        custom css-->
+        <link rel="stylesheet" href="resources/css/style.css">
+        
+        <!--        jQuery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
+        
+        <title>Withdraws</title>
+    </head>
+    <body>
+        <section class="navigation">
+            <div class="sidebar">
+                <a href="dashboard.html" class="sidenav_link">
+<!--
+                        <svg class="side_nav_icon">
+                            <use href="resources/icons/people.svg">
+                            </use>
+                        </svg>
+--> 
+                        <ion-icon name="analytics"></ion-icon>
+                        <span>Dashboard</span>
+                </a>
+                <a href="users.html" class="sidenav_link ">
+                        <ion-icon name="people"></ion-icon>
+                        <span>Users</span>
+                </a>
+                <a href="transactions.html" class="sidenav_link">
+                        <ion-icon name="newspaper"></ion-icon>
+                        <span>transactions</span>
+                </a>
+                <a href="withdraws.html" class="sidenav_link ">
+                        <ion-icon name="cash"></ion-icon>
+                        <span>Withdraws</span>
+                </a>
+                <a href="payments.html" class="sidenav_link ">
+                        <ion-icon name="wallet"></ion-icon>
+                        <span>Payments</span>
+                </a>
+                <a href="payment%20Methods.html" class="sidenav_link ">
+                        <ion-icon name="card"></ion-icon>
+                        <span>Payment Methods</span>
+                </a>
+                <a href="level%20setup.html" class="sidenav_link active">
+                        <ion-icon name="speedometer"></ion-icon>
+                        <span>Level Setup</span>
+                </a>
+                <a href="#" class="sidenav_link ">
+                        <ion-icon name="help-circle"></ion-icon>
+                        <span>Help Line</span>
+                </a>
+                <a href="#" class="sidenav_link ">
+                        <ion-icon name="settings"></ion-icon>
+                        <span>General Setting</span>
+                </a>
+                <a href="#" class="sidenav_link ">
+                        <ion-icon name="leaf"></ion-icon>   
+                        <span>Add studio</span>
+                </a>
+                <a href="#" class="sidenav_link ">
+                        <ion-icon name="people-circle"></ion-icon>
+                        <span>Circle History</span>
+                </a>
+                <a href="#" class="sidenav_link ">
+                        <ion-icon name="hammer"></ion-icon>
+                        <span>Page setting</span>
+                </a>
+            </div>
+        </section>
+        <section class="page">
+            <div class="header">
+                <div class="header_image">
+                    <img src="resources/img/profile.jpg">
+                </div>
+            </div>
+            <div class="main_container">
+                <div class="content">
+                    <h2>Level Setup</h2>      
+<!--                    buttons-->
+                    <div class="btn-group-level_setup">
+                        <a type="button" class="btn btn-level_setup btn_active" id="btn_stystem_v" >System Variable</a>
+                        <a type="button" class="btn btn-level_setup" id="btn_level_arc">Level Architecture</a>
+                        
+<!--                        system variables part-->
+                        <div class="col-12 system_variable " id="system_v">
+                            <div class="row mt-3 pt-2 pb-1">
+                                <div class="col-4 ml-5 pt-2 text-right">
+                                    <p>Membership Fee</p>
+                                </div>
+                                <div class="col-6">
+                                    <input type="email" class="form-control input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+                                    <small id="" class="form-text text-muted pl-4"></small>
+                                </div>
+                            </div>
+                            <div class="row mt-3 pt-2 pb-1">
+                                <div class="col-4 ml-5 pt-2 text-right">
+                                    <p>Minimum Withdrawal Fee</p>
+                                </div>
+                                <div class="col-6">
+                                    <input type="email" class="form-control input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+                                    <small id="" class="form-text text-muted pl-4"></small>
+                                </div>
+                            </div>
+                            <div class="row mt-3 pt-2 pb-1">
+                                <div class="col-4 ml-5 text-right">
+                                    <p class="mb-0">At the beginning of second level,</p>
+                                    <p>amount of fee bean user will get</p>
+                                </div>
+                                <div class="col-6 pt-3">
+                                    <input type="email" class="form-control input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+                                    <small id="" class="form-text text-muted pl-4"></small>
+                                </div>
+                            </div>
+                            <div class="row mt-3 pt-2 pb-1">
+                                <div class="col-4 ml-5 pt-2 text-right">
+                                    <p>Winner Clan Admin Gain Percentage</p>
+                                </div>
+                                <div class="col-6">
+                                    <input type="email" class="form-control input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+                                    <small id="" class="form-text text-muted pl-4">**winnwe clan admin will gain=deducated point *3*x%</small>
+                                </div>
+                            </div>
+                            <div class="row mt-3 pt-2 pb-1">
+                                <div class="col-4 ml-5 pt-2 text-right">
+                                    <p>Winner Clan Member Gain Percentage</p>
+                                </div>
+                                <div class="col-6">
+                                    <input type="email" class="form-control input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+                                    <small id="" class="form-text text-muted pl-4">**winnwe clan member will gain=deducated point from admin *3*x%</small>
+                                </div>
+                            </div>
+                            <div class="row mt-3 pt-2 pb-1">
+                                <div class="col-4 ml-5 pt-2 text-right">
+                                    <p class="mb-0">Looser Clan Admin Gain Percentage</p>
+                                    <p>through promo code</p>
+                                </div>
+                                <div class="col-6">
+                                    <input type="email" class="form-control input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+                                    <small id="" class="form-text text-muted pl-4">**Looser clan Admin will gain=deducated point from admin *3*x%</small>
+                                </div>
+                            </div>
+                            <div class="row mt-3 pt-2 pb-1">
+                                <div class="col-4 ml-5 pt-2 text-right">
+                                    <p class="mb-0">Looser Clan Admin Gain Percentage</p>
+                                    <p>through Gift</p>
+                                </div>
+                                <div class="col-6">
+                                    <input type="email" class="form-control input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+                                    <small id="" class="form-text text-muted pl-4">**Looser clan Admin will gain=deducated point from admin *3*x%</small>
+                                </div>
+                            </div>
+                            <div class="row mt-3 pt-2 pb-1">
+                                <div class="col-4 ml-5 pt-2 text-right">
+                                    <p>Rubby for Quize Correct Answer</p>
+                                </div>
+                                <div class="col-6">
+                                    <input type="email" class="form-control input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+                                    <small id="" class="form-text text-muted pl-4"></small>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                        
+                    </div>            
+                    <!--                        level architecture part-->
+                    <div class="row" id="level_arc">
+                        <div class="row" >
+                            <table class="table table-borderless">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Level</th>
+                                        <th scope="col" class="text-center">Balance</th>
+                                        <th scope="col" class="text-center">Deducated Point</th>
+                                        <th scope="col" class="text-center">Got Bean</th>
+                                        <th scope="col" class="text-center">Bean Achievement Per Video </th>
+                                        <th scope="col" class="text-center">Ruby Achievement Per Video </th>
+                                        <th scope="col" class="text-center">Total Earned Ruby</th>
+                                        <th scope="col" class="text-center">Clan Members total Ruby</th>
+                                        <th scope="col" class="text-center">Total Clan Ruby</th>
+                                        <th scope="col" class="text-center">Point Secure</th>
+                                        <th scope="col" class="text-center">Total Earn</th>
+                                        <th scope="col" class="text-center">Point Secure</th>
+                                        
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Level 1</td>
+                                        <td class="text-center">50</td>                               
+                                        <td class="text-center">0.5</td>                               
+                                        <td class="text-center">2</td>                               
+                                        <td class="text-center">0.20</td>                               
+                                        <td class="text-center">1</td>                               
+                                        <td class="text-center">10</td>                               
+                                        <td class="text-center">30</td>                               
+                                        <td class="text-center">40</td>                               
+                                        <td class="text-center">0.6</td>                               
+                                        <td class="text-center">60</td>                               
+                                        <td class="text-center">
+                                        <a href="users%20details.html" class="btn btn-primary status ml-0 mr-0">Edit</a>
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>Level 1</td>
+                                        <td class="text-center">50</td>                               
+                                        <td class="text-center">0.5</td>                               
+                                        <td class="text-center">2</td>                               
+                                        <td class="text-center">0.20</td>                               
+                                        <td class="text-center">1</td>                               
+                                        <td class="text-center">10</td>                               
+                                        <td class="text-center">30</td>                               
+                                        <td class="text-center">40</td>                               
+                                        <td class="text-center">0.6</td>                               
+                                        <td class="text-center">60</td>                               
+                                        <td class="text-center">
+                                        <a href="users%20details.html" class="btn btn-primary status ml-0 mr-0">Edit</a>
+                                        </td>
+                                    </tr>
+                            
+                            </tbody>
+                        </table>
+                     </div>
+                        
+
+                </div>
+                
+                
+            </div>
+        </section>
+        <script src="resources/js/jQuery.js"></script>
+    </body>
+</html>
