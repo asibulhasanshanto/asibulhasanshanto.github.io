@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--        icons-->
+        <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+<!--        fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+<!--        chart-->
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+<!--        bootstrap-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<!--        custom css-->
+        <link rel="stylesheet" href="resources/css/style.css">
+        <link rel="stylesheet" href="resources/css/query.css">
+        
+        <title>AD Studio</title>
+    </head>
+    <body>
+        <section class="navigation">
+            <div class="sidebar">
+                <a href="dashboard.html" class="sidenav_link">
+<!--
+                        <svg class="side_nav_icon">
+                            <use href="resources/icons/people.svg">
+                            </use>
+                        </svg>
+--> 
+                        <ion-icon name="analytics"></ion-icon>
+                        <span>Dashboard</span>
+                </a>
+                <a href="users.html" class="sidenav_link ">
+                        <ion-icon name="people"></ion-icon>
+                        <span>Users</span>
+                </a>
+                <a href="transactions.html" class="sidenav_link ">
+                        <ion-icon name="newspaper"></ion-icon>
+                        <span>transactions</span>
+                </a>
+                <a href="withdraws.html" class="sidenav_link ">
+                        <ion-icon name="cash"></ion-icon>
+                        <span>Withdraws</span>
+                </a>
+                <a href="payments.html" class="sidenav_link ">
+                        <ion-icon name="wallet"></ion-icon>
+                        <span>Payments</span>
+                </a>
+                <a href="payment%20Methods.html" class="sidenav_link ">
+                        <ion-icon name="card"></ion-icon>
+                        <span>Payment Methods</span>
+                </a>
+                <a href="level%20setup.html" class="sidenav_link ">
+                        <ion-icon name="speedometer"></ion-icon>
+                        <span>Level Setup</span>
+                </a>
+                <a href="helpline.html" class="sidenav_link ">
+                        <ion-icon name="help-circle"></ion-icon>
+                        <span>Help Line</span>
+                </a>
+                <a href="general%20setting.html" class="sidenav_link ">
+                        <ion-icon name="settings"></ion-icon>
+                        <span>General Setting</span>
+                </a>
+                <a href="ad%20studio.html" class="sidenav_link active ">
+                        <ion-icon name="leaf"></ion-icon>   
+                        <span>Add studio</span>
+                </a>
+                <a href="#" class="sidenav_link ">
+                        <ion-icon name="people-circle"></ion-icon>
+                        <span>Circle History</span>
+                </a>
+                <a href="#" class="sidenav_link ">
+                        <ion-icon name="hammer"></ion-icon>
+                        <span>Page setting</span>
+                </a>
+            </div>
+        </section>
+        <section class="page">
+            <div class="header">
+                <div class="header_image">
+                    <img src="resources/img/profile.jpg">
+                </div>
+            </div>
+            <div class="main_container">
+                <div class="content">
+                    <div class="float-left clearfix p-0 m-0">
+                        <h2>AD Studio</h2>
+                    <p>Showing 10 users out of 1000</p>
+                    </div>
+                    <div class="studio-top-nav">
+                        <input type="text" class="form-control ad-studio-input" placeholder="Title">
+                        
+                        <select class="custom-select ad-studio-input" >
+                            <option selected>Choose...</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                        
+                        
+                        <input type="date" class="form-control ad-studio-input" placeholder="Title">
+                        <a href="#" class="btn btn-primary pt-3 pb-3 pl-5 pr-5">SEARCH</a>
+                        
+                    </div>
+                </div>
+                <div class="ad-studio-body ml-4">
+                        <table class="table table-borderless">
+                        <thead>
+                            <tr>
+                                <th scope="col">Video</th>
+                                <th scope="col" class="text-center">Duration</th>
+                                <th scope="col" class="text-center">Published</th>
+                                <th scope="col" class="text-center">Status</th>
+                                <th scope="col" class="text-center">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><img class="video-image mr-2"src="resources/img/profile.jpg"> 1 Jan 2020</td>
+                                <td class="text-center align-middle ">02:00</td>
+                                <td class="text-center align-middle">09/09/2012 at 10:00PM</td>
+                                <td class="text-center align-middle">
+                                    <button class="btn btn-success status" disabled>PUBLISHED</button>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <a href="#" class="btn btn-primary ml-1">VIEW</a>
+                                    <a href="#" class="btn btn-warning ml-1">ARCHIVE</a><a href="#" class="btn btn-success ml-1">EDIT</a>
+                                    <a href="#" class="btn btn-danger ml-1">DELETE</a>
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td><img class="video-image mr-2"src="resources/img/profile2.jfif"> 1 Jan 2020</td>
+                                <td class="text-center align-middle ">02:00</td>
+                                <td class="text-center align-middle">09/09/2012 at 10:00PM</td>
+                                <td class="text-center align-middle">
+                                    <button class="btn btn-warning status" disabled>ARCHIVED</button>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <a href="#" class="btn btn-primary ml-1">VIEW</a>
+                                    <a href="#" class="btn btn-warning ml-1">ARCHIVE</a><a href="#" class="btn btn-success ml-1">EDIT</a>
+                                    <a href="#" class="btn btn-danger ml-1">DELETE</a>
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td><img class="video-image mr-2"src="resources/img/profile3.jfif"> 1 Jan 2020</td>
+                                <td class="text-center align-middle ">02:00</td>
+                                <td class="text-center align-middle">09/09/2012 at 10:00PM</td>
+                                <td class="text-center align-middle">
+                                    <button class="btn btn-success status" disabled>PUBLISHED</button>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <a href="#" class="btn btn-primary ml-1">VIEW</a>
+                                    <a href="#" class="btn btn-warning ml-1">ARCHIVE</a><a href="#" class="btn btn-success ml-1">EDIT</a>
+                                    <a href="#" class="btn btn-danger ml-1">DELETE</a>
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td><img class="video-image mr-2"src="resources/img/profile4.jpg"> 1 Jan 2020</td>
+                                <td class="text-center align-middle ">02:00</td>
+                                <td class="text-center align-middle">09/09/2012 at 10:00PM</td>
+                                <td class="text-center align-middle">
+                                    <button class="btn btn-warning status" disabled>ARCHIVED</button>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <a href="#" class="btn btn-primary ml-1">VIEW</a>
+                                    <a href="#" class="btn btn-warning ml-1">ARCHIVE</a><a href="#" class="btn btn-success ml-1">EDIT</a>
+                                    <a href="#" class="btn btn-danger ml-1">DELETE</a>
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td><img class="video-image mr-2"src="resources/img/profile.jpg"> 1 Jan 2020</td>
+                                <td class="text-center align-middle ">02:00</td>
+                                <td class="text-center align-middle">09/09/2012 at 10:00PM</td>
+                                <td class="text-center align-middle">
+                                    <button class="btn btn-warning status" disabled>ARCHIVED</button>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <a href="#" class="btn btn-primary ml-1">VIEW</a>
+                                    <a href="#" class="btn btn-warning ml-1">ARCHIVE</a><a href="#" class="btn btn-success ml-1">EDIT</a>
+                                    <a href="#" class="btn btn-danger ml-1">DELETE</a>
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td><img class="video-image mr-2"src="resources/img/profile2.jfif"> 1 Jan 2020</td>
+                                <td class="text-center align-middle ">02:00</td>
+                                <td class="text-center align-middle">09/09/2012 at 10:00PM</td>
+                                <td class="text-center align-middle">
+                                    <button class="btn btn-warning status" disabled>ARCHIVED</button>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <a href="#" class="btn btn-primary ml-1">VIEW</a>
+                                    <a href="#" class="btn btn-warning ml-1">ARCHIVE</a><a href="#" class="btn btn-success ml-1">EDIT</a>
+                                    <a href="#" class="btn btn-danger ml-1">DELETE</a>
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td><img class="video-image mr-2"src="resources/img/profile4.jpg"> 1 Jan 2020</td>
+                                <td class="text-center align-middle ">02:00</td>
+                                <td class="text-center align-middle">09/09/2012 at 10:00PM</td>
+                                <td class="text-center align-middle">
+                                    <button class="btn btn-success status" disabled>PUBLISHED</button>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <a href="#" class="btn btn-primary ml-1">VIEW</a>
+                                    <a href="#" class="btn btn-warning ml-1">ARCHIVE</a><a href="#" class="btn btn-success ml-1">EDIT</a>
+                                    <a href="#" class="btn btn-danger ml-1">DELETE</a>
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td><img class="video-image mr-2"src="resources/img/profile3.jfif"> 1 Jan 2020</td>
+                                <td class="text-center align-middle ">02:00</td>
+                                <td class="text-center align-middle">09/09/2012 at 10:00PM</td>
+                                <td class="text-center align-middle">
+                                    <button class="btn btn-warning status" disabled>ARCHIVED</button>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <a href="#" class="btn btn-primary ml-1">VIEW</a>
+                                    <a href="#" class="btn btn-warning ml-1">ARCHIVE</a><a href="#" class="btn btn-success ml-1">EDIT</a>
+                                    <a href="#" class="btn btn-danger ml-1">DELETE</a>
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td><img class="video-image mr-2"src="resources/img/profile.jpg"> 1 Jan 2020</td>
+                                <td class="text-center align-middle ">02:00</td>
+                                <td class="text-center align-middle">09/09/2012 at 10:00PM</td>
+                                <td class="text-center align-middle">
+                                    <button class="btn btn-success status" disabled>PUBLISHED</button>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <a href="#" class="btn btn-primary ml-1">VIEW</a>
+                                    <a href="#" class="btn btn-warning ml-1">ARCHIVE</a><a href="#" class="btn btn-success ml-1">EDIT</a>
+                                    <a href="#" class="btn btn-danger ml-1">DELETE</a>
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td><img class="video-image mr-2"src="resources/img/profile4.jpg"> 1 Jan 2020</td>
+                                <td class="text-center align-middle ">02:00</td>
+                                <td class="text-center align-middle">09/09/2012 at 10:00PM</td>
+                                <td class="text-center align-middle">
+                                    <button class="btn btn-warning status" disabled>ARCHIVED</button>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <a href="#" class="btn btn-primary ml-1">VIEW</a>
+                                    <a href="#" class="btn btn-warning ml-1">ARCHIVE</a><a href="#" class="btn btn-success ml-1">EDIT</a>
+                                    <a href="#" class="btn btn-danger ml-1">DELETE</a>
+                                </td>
+                            </tr>
+                             
+                            
+                        </tbody>
+                    </table>
+                    
+                </div>
+                <!--                    pagination-->
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item disabled">
+                            <span class="page-link"> < </span>
+                        </li>
+                        <li class="page-item active" aria-current="page">
+                            <span class="page-link">
+                                1
+                                <span class="sr-only">(current)</span>
+                            </span>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">></a>
+                        </li>
+                    </ul>
+                
+            </div>
+        </section>
+        
+    </body>
+</html>
