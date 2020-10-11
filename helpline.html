@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--        icons-->
+        <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+<!--        fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+<!--        chart-->
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+<!--        bootstrap-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<!--        custom css-->
+        <link rel="stylesheet" href="resources/css/style.css">
+        <link rel="stylesheet" href="resources/css/query.css">
+        
+        <title>Helpline</title>
+    </head>
+    <body>
+        <section class="navigation">
+            <div class="sidebar">
+                <a href="dashboard.html" class="sidenav_link">
+<!--
+                        <svg class="side_nav_icon">
+                            <use href="resources/icons/people.svg">
+                            </use>
+                        </svg>
+--> 
+                        <ion-icon name="analytics"></ion-icon>
+                        <span>Dashboard</span>
+                </a>
+                <a href="users.html" class="sidenav_link ">
+                        <ion-icon name="people"></ion-icon>
+                        <span>Users</span>
+                </a>
+                <a href="transactions.html" class="sidenav_link ">
+                        <ion-icon name="newspaper"></ion-icon>
+                        <span>transactions</span>
+                </a>
+                <a href="withdraws.html" class="sidenav_link ">
+                        <ion-icon name="cash"></ion-icon>
+                        <span>Withdraws</span>
+                </a>
+                <a href="payments.html" class="sidenav_link ">
+                        <ion-icon name="wallet"></ion-icon>
+                        <span>Payments</span>
+                </a>
+                <a href="payment%20Methods.html" class="sidenav_link ">
+                        <ion-icon name="card"></ion-icon>
+                        <span>Payment Methods</span>
+                </a>
+                <a href="level%20setup.html" class="sidenav_link ">
+                        <ion-icon name="speedometer"></ion-icon>
+                        <span>Level Setup</span>
+                </a>
+                <a href="helpline.html" class="sidenav_link active">
+                        <ion-icon name="help-circle"></ion-icon>
+                        <span>Help Line</span>
+                </a>
+                <a href="#" class="sidenav_link ">
+                        <ion-icon name="settings"></ion-icon>
+                        <span>General Setting</span>
+                </a>
+                <a href="#" class="sidenav_link ">
+                        <ion-icon name="leaf"></ion-icon>   
+                        <span>Add studio</span>
+                </a>
+                <a href="#" class="sidenav_link ">
+                        <ion-icon name="people-circle"></ion-icon>
+                        <span>Circle History</span>
+                </a>
+                <a href="#" class="sidenav_link ">
+                        <ion-icon name="hammer"></ion-icon>
+                        <span>Page setting</span>
+                </a>
+            </div>
+        </section>
+        <section class="page">
+            <div class="header">
+                <div class="header_image">
+                    <img src="resources/img/profile.jpg">
+                </div>
+            </div>
+            <div class="main_container">
+                <div class="content">
+                    <h2>Helpline</h2>
+                    <p>Showing 10 users out of 1000</p>
+                    
+                    <div class="helpline">
+                        <div class="helpline-user-list-container">
+                            <div class="helpline-user-search">
+                                <ion-icon name="search"></ion-icon>
+                                <input class="form-control search-input" placeholder="Search Message or Name ...">
+                            </div>
+                            <ul class="helpline-user-list">
+                                <li class="helpline-user-list-item" onclick="location.href='#';" style="cursor: pointer;">
+                                    <div class="helpline-user-list-image">
+                                        <img src="resources/img/profile.jpg">
+                                    </div>  
+                                    <div class="helpline-user-list-info">
+                                        <h2 class="m-0 float-left clearfix  ">David Jemse</h2>
+                                        <small class="float-right">jan 5</small>
+                                        <p class="m-0 single-line-paragraph">Perferendis sit dolor soluta inventore voluptas adipisci temporibus. Perspiciatis dolorem quaerat delectus quidem ea ratione. Dolor eum quia nihil.</p>
+                                    </div>
+                                    
+                                </li>
+                                <li class="helpline-user-list-item" onclick="location.href='#';" style="cursor: pointer;">
+                                    <div class="helpline-user-list-image">
+                                        <img src="resources/img/profile.jpg">
+                                    </div>  
+                                    <div class="helpline-user-list-info">
+                                        <h2 class="m-0 float-left clearfix  ">David Jemse</h2>
+                                        <small class="float-right">jan 5</small>
+                                        <p class="m-0 single-line-paragraph">Perferendis sit dolor soluta inventore voluptas adipisci temporibus. Perspiciatis dolorem quaerat delectus quidem ea ratione. Dolor eum quia nihil.</p>
+                                    </div>
+                                    
+                                </li>
+                                <li class="helpline-user-list-item" onclick="location.href='#';" style="cursor: pointer;">
+                                    <div class="helpline-user-list-image">
+                                        <img src="resources/img/profile.jpg">
+                                    </div>  
+                                    <div class="helpline-user-list-info">
+                                        <h2 class="m-0 float-left clearfix  ">David Jemse</h2>
+                                        <small class="float-right">jan 5</small>
+                                        <p class="m-0 single-line-paragraph">Perferendis sit dolor soluta inventore voluptas adipisci temporibus. Perspiciatis dolorem quaerat delectus quidem ea ratione. Dolor eum quia nihil.</p>
+                                    </div>
+                                    
+                                </li>
+                                <li class="helpline-user-list-item" onclick="location.href='#';" style="cursor: pointer;">
+                                    <div class="helpline-user-list-image">
+                                        <img src="resources/img/profile.jpg">
+                                    </div>  
+                                    <div class="helpline-user-list-info">
+                                        <h2 class="m-0 float-left clearfix  ">David Jemse</h2>
+                                        <small class="float-right">jan 5</small>
+                                        <p class="m-0 single-line-paragraph">Perferendis sit dolor soluta inventore voluptas adipisci temporibus. Perspiciatis dolorem quaerat delectus quidem ea ratione. Dolor eum quia nihil.</p>
+                                    </div>
+                                    
+                                </li>
+                                <li class="helpline-user-list-item" onclick="location.href='#';" style="cursor: pointer;">
+                                    <div class="helpline-user-list-image">
+                                        <img src="resources/img/profile.jpg">
+                                    </div>  
+                                    <div class="helpline-user-list-info">
+                                        <h2 class="m-0 float-left clearfix  ">David Jemse</h2>
+                                        <small class="float-right">jan 5</small>
+                                        <p class="m-0 single-line-paragraph">Perferendis sit dolor soluta inventore voluptas adipisci temporibus. Perspiciatis dolorem quaerat delectus quidem ea ratione. Dolor eum quia nihil.</p>
+                                    </div>
+                                    
+                                </li>
+                                <li class="helpline-user-list-item" onclick="location.href='#';" style="cursor: pointer;">
+                                    <div class="helpline-user-list-image">
+                                        <img src="resources/img/profile.jpg">
+                                    </div>  
+                                    <div class="helpline-user-list-info">
+                                        <h2 class="m-0 float-left clearfix  ">David Jemse</h2>
+                                        <small class="float-right">jan 5</small>
+                                        <p class="m-0 single-line-paragraph">Perferendis sit dolor soluta inventore voluptas adipisci temporibus. Perspiciatis dolorem quaerat delectus quidem ea ratione. Dolor eum quia nihil.</p>
+                                    </div>
+                                    
+                                </li>
+                                <li class="helpline-user-list-item" onclick="location.href='#';" style="cursor: pointer;">
+                                    <div class="helpline-user-list-image">
+                                        <img src="resources/img/profile.jpg">
+                                    </div>  
+                                    <div class="helpline-user-list-info">
+                                        <h2 class="m-0 float-left clearfix  ">David Jemse</h2>
+                                        <small class="float-right">jan 5</small>
+                                        <p class="m-0 single-line-paragraph">Perferendis sit dolor soluta inventore voluptas adipisci temporibus. Perspiciatis dolorem quaerat delectus quidem ea ratione. Dolor eum quia nihil.</p>
+                                    </div>
+                                    
+                                </li>
+                                <li class="helpline-user-list-item" onclick="location.href='#';" style="cursor: pointer;">
+                                    <div class="helpline-user-list-image">
+                                        <img src="resources/img/profile.jpg">
+                                    </div>  
+                                    <div class="helpline-user-list-info">
+                                        <h2 class="m-0 float-left clearfix  ">David Jemse</h2>
+                                        <small class="float-right">jan 5</small>
+                                        <p class="m-0 single-line-paragraph">Perferendis sit dolor soluta inventore voluptas adipisci temporibus. Perspiciatis dolorem quaerat delectus quidem ea ratione. Dolor eum quia nihil.</p>
+                                    </div>
+                                    
+                                </li>
+                                <li class="helpline-user-list-item" onclick="location.href='#';" style="cursor: pointer;">
+                                    <div class="helpline-user-list-image">
+                                        <img src="resources/img/profile.jpg">
+                                    </div>  
+                                    <div class="helpline-user-list-info">
+                                        <h2 class="m-0 float-left clearfix  ">David Jemse</h2>
+                                        <small class="float-right">jan 5</small>
+                                        <p class="m-0 single-line-paragraph">Perferendis sit dolor soluta inventorevoluptas adipisci temporibus. Perspiciatis dolorem quaerat delectus quidem ea ratione. Dolor eum quia nihil.</p>
+                                    </div>
+                                    
+                                </li>
+                                <li class="helpline-user-list-item" onclick="location.href='#';" style="cursor: pointer;">
+                                    <div class="helpline-user-list-image">
+                                        <img src="resources/img/profile.jpg">
+                                    </div>  
+                                    <div class="helpline-user-list-info">
+                                        <h2 class="m-0 float-left clearfix  ">David Jemse</h2>
+                                        <small class="float-right">jan 5</small>
+                                        <p class="m-0 single-line-paragraph">hjdfshfuahfehfiausfsfhiashjfaxxkuhuyiyg</p>
+                                    </div>
+                                    
+                                </li>
+                                
+                                
+                            </ul>
+                        </div>
+                        
+                        <div class="helpline-user-message">
+                            <div class="helpline-user-message-avatar">
+                                <div class="d-flex align-items-center pl-5">
+                                    <img src="resources/img/profile.jpg">
+                                    <h2>David James</h2>
+                                </div>
+                                <p class="align-self-start">jun 5,2018</p>
+                            </div>
+                            
+                            <div class="helpline-user-message-body pl-5">
+                                <p class="pt-5"> Hi David</p>
+                                <p class="pt-2 pb-2">Quis culpa dolorum nam est. Sunt saepe omnis voluptas unde iusto doloribus. Doloribus quis ut et minima ut magni qui. Quis est sed vel tempore fugit.Id consectetur non minima excepturi. Quo ipsum vel est voluptatibus mollitia magni quo. Voluptatem voluptatem ut rerum totam molestias. </p>
+                                
+                                <p class="pb-5">Alias in qui numquam non earum cum est dolor. Tempora illo consequatur odio et. Quam autem quam voluptas sint possimus. Deserunt ipsa eveniet minus dignissimos blanditiis. Placeat aperiam fuga ab et omnis sint.</p>
+                                <textarea class="form-control helpline-textarea"  rows="4"  placeholder="click here to reply"></textarea>
+                                <a href="#" class="btn btn-primary float-right mt-3">Reply</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    
+<!--                    pagination-->
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item disabled">
+                            <span class="page-link"> < </span>
+                        </li>
+                        <li class="page-item active" aria-current="page">
+                            <span class="page-link">
+                                1
+                                <span class="sr-only">(current)</span>
+                            </span>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">></a>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+        </section>
+    </body>
+</html>

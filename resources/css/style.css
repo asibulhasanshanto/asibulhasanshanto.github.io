@@ -115,16 +115,16 @@ body
 }
 
 .main_container{
-    margin: 2% auto 0 auto;
+    margin: 1.5% auto 0 auto;
     width: 99.8%;
-    height: 88%;   
+    height: 89%;   
     border: 1px solid #aaa;
     border-radius: 10px;
     background: white;
 }
 .content{
-    width: 90%;
-    margin-left: 3%;
+    width: 95%;
+    margin-left: 2%;
     margin-top: 1%;
     min-height: 7%;
 /*    height: 90vh;*/
@@ -148,6 +148,12 @@ p{
     font-size: 1.4rem;
     font-weight: 600;
     color: rgba(128, 128, 128, 0.9);
+}
+small{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color:  rgba(128, 128, 128, 0.9)
+
 }
 /*==================Table properties================*/
 
@@ -332,4 +338,110 @@ td{
     padding: 0.8rem 5rem;
     border-radius: 0.5rem;
     font-size: 1.5rem;
+}
+
+
+/*============== Helpline============*/
+.helpline{
+    height: 72vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.helpline-user-list-container{
+    width: 30%;
+    height: 100%;
+}
+.helpline-user-search{
+    width: 100%;
+    height: 13%;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    
+}
+
+.helpline-user-search ion-icon{
+    font-size: 2rem;
+    color: gray;
+    padding-left: 1rem;
+
+    
+}
+.search-input{
+    width: 100%;
+    font-size: 1.2rem;
+    margin-left: -3rem;
+    padding-left: 3.5rem;
+    height: 100%;
+    border-top: none;
+    border-bottom: none;
+}
+.helpline-user-list{
+    width: 100%;
+    height: 87%;
+    list-style: none; 
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+     scrollbar-width: none;
+}
+.helpline-user-list::-webkit-scrollbar {
+  display: none;
+}
+.helpline-user-list-item{
+    border: 1px solid rgba(128, 128, 128, 0.5);
+    border-bottom: none;
+    display: flex;
+    padding: 2rem 1rem;
+    
+}
+.helpline-user-list-image img{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
+    
+}
+.helpline-user-list-info{
+    width: 80%;
+}
+.helpline-user-list-info h2{
+    font-size: 1.5rem;
+}
+.helpline-user-list-info p{
+    font-size: 1.3rem;
+}
+.single-line-paragraph{
+   width: 100%;
+    overflow: hidden;
+    height: 2rem;
+}
+
+
+.helpline-user-message{
+    width: 70%;
+    height: 100%;
+}
+.helpline-user-message-avatar{
+    height: 13%;
+    width: auto;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.helpline-user-message-avatar img{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
+}
+.helpline-textarea{
+    font-size: 1.3rem;
+    font-weight: 600;
+    width: 100%;
+    height: 20rem;
+    background: #dfe6e9;
 }
