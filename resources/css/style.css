@@ -149,6 +149,11 @@ p{
     font-weight: 600;
     color: rgba(128, 128, 128, 0.9);
 }
+b{
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.74);
+}
 small{
     font-size: 1.2rem;
     font-weight: 600;
@@ -448,7 +453,7 @@ td{
 }
 /*============== Ad studio============*/
 .studio-top-nav{
-    height: 4.6rem;
+    height: 4.4rem;
     width: 55%;
     float: right;
     display: flex;
@@ -467,7 +472,7 @@ td{
     
 }
 .ad-studio-body{
-    height: 69vh;
+    height: 68vh;
     width: 98%;
     overflow-y: scroll;
     -ms-overflow-style: none;
@@ -480,4 +485,123 @@ td{
     width: 13rem;
     height: 10rem;
     object-fit: cover;
+}
+.upload-ad-button ion-icon{
+    font-size: 1.5rem;
+    color: white;
+}
+.upload-ad-button{
+    font-size: 1.3rem;
+
+}
+.upload-videos{
+    width: 97%;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.upload-videos img{
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+}
+.upload-videos p{
+    opacity: 0.8;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.terms-and-conditions a{
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+/*---ad details---*/
+
+.ad-details{
+    width: 97%;
+    height: 77vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.ad-details-video{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+.ad-video{
+    width: 90%;
+}
+.ad-video p{
+    font-size: 1.3rem;
+    line-height: 1.3;
+}
+.ad-details-info{
+    width: 40%;
+    height: 100%;
+}
+
+/*---------ad studio modal----*/
+.modal-body-ad{
+    background: white;
+    margin: 15vh auto;
+    height: 70vh;
+    position:relative;
+    border-radius: 1rem;
+    display: flex;
+}
+.ad-modal-header{
+    flex-direction: column;
+    align-items:flex-start;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.6);
+}
+.ad-modal-input{
+    width: 58%;
+    height: 100%;
+    
+}
+.ad-modal-input input{
+    width: 100%;
+    font-size: 1.4rem;
+    height: 5rem;
+    font-weight: 500;
+    border-radius: 0.7rem;
+}
+.ad-modal-input textarea{
+    width: 100%;
+    font-size: 1.4rem;
+    height: 15rem;
+    font-weight: 500;
+    border-radius: 0.7rem;
+
+}
+.ad-modal-video{
+    width: 38%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.ad-edit-video{
+    width: 100%;
+    
+}
+.modal-video-description{
+    
+    width: 100%;
+    background: #dfe6e9;
+}
+.ad-modal-footer{
+    border-top: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    
 }

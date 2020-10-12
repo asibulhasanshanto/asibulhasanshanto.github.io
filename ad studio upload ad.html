@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--        icons-->
+        <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+<!--        fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+<!--        chart-->
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+<!--        bootstrap-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<!--        custom css-->
+        <link rel="stylesheet" href="resources/css/style.css">
+        <link rel="stylesheet" href="resources/css/query.css">
+        
+        <!--        jQuery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!--        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+        
+        <title>Upload Ad</title>
+    </head>
+    <body>
+        <section class="navigation">
+            <div class="sidebar">
+                <a href="dashboard.html" class="sidenav_link">
+                        <ion-icon name="analytics"></ion-icon>
+                        <span>Dashboard</span>
+                </a>
+                <a href="users.html" class="sidenav_link ">
+                        <ion-icon name="people"></ion-icon>
+                        <span>Users</span>
+                </a>
+                <a href="transactions.html" class="sidenav_link ">
+                        <ion-icon name="newspaper"></ion-icon>
+                        <span>transactions</span>
+                </a>
+                <a href="withdraws.html" class="sidenav_link ">
+                        <ion-icon name="cash"></ion-icon>
+                        <span>Withdraws</span>
+                </a>
+                <a href="payments.html" class="sidenav_link ">
+                        <ion-icon name="wallet"></ion-icon>
+                        <span>Payments</span>
+                </a>
+                <a href="payment%20Methods.html" class="sidenav_link ">
+                        <ion-icon name="card"></ion-icon>
+                        <span>Payment Methods</span>
+                </a>
+                <a href="level%20setup.html" class="sidenav_link ">
+                        <ion-icon name="speedometer"></ion-icon>
+                        <span>Level Setup</span>
+                </a>
+                <a href="helpline.html" class="sidenav_link ">
+                        <ion-icon name="help-circle"></ion-icon>
+                        <span>Help Line</span>
+                </a>
+                <a href="general%20setting.html" class="sidenav_link ">
+                        <ion-icon name="settings"></ion-icon>
+                        <span>General Setting</span>
+                </a>
+                <a href="ad%20studio.html" class="sidenav_link active ">
+                        <ion-icon name="leaf"></ion-icon>   
+                        <span>Add studio</span>
+                </a>
+                <a href="#" class="sidenav_link ">
+                        <ion-icon name="people-circle"></ion-icon>
+                        <span>Circle History</span>
+                </a>
+                <a href="#" class="sidenav_link ">
+                        <ion-icon name="hammer"></ion-icon>
+                        <span>Page setting</span>
+                </a>
+            </div>
+        </section>
+        <section class="page">
+            <div class="header">
+                <div class="header_image">
+                    <img src="resources/img/profile.jpg">
+                </div>
+            </div>
+            <div class="main_container">
+                <div class="content">
+                    <h2 class="float-left clearfix">Upload Videos</h2>
+                    <a href="ad%20studio.html" class="btn btn-secondary float-right">Back</a>
+                    
+                </div>
+                <div class="upload-videos ml-4 mr-4">
+                    <img class="mb-3" src="resources/img/upload.png">
+                    <p class="mt-4 mb-4">Drag and drop video files to upload</p>
+                    <a href="#" class="btn btn-primary pt-3 pb-3 pl-5 pr-5 mb-4" data-toggle="modal" data-target="#create-add">SELECT VIDEO</a>
+                    <p class="terms-and-conditions mb-0">
+                        By submitting your videos to YouTube,you acknowledge that you are agree to YouTub's <a href="#">Terms of Service</a> and <a href="#">Community Guidelines.</a>
+                        <p class="terms-and-conditions"> Please Be sure not to Violate other's copyright or privacy rights.<a href="#">Learn more</a></p>
+                    </p>
+                    
+                </div>
+                
+                
+                 
+                
+                
+            </div>
+        </section>
+                <!--        modal for creating-->
+        <div class="modal fade" id="create-add" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+
+            <div class="modal-body-ad modal-dialog" role="document">
+                <div class="modal-content">
+                    
+<!--                                header-->
+                    <div class="modal-header ad-modal-header mb-5">
+                      <h2 class="modal-title pt-3 pb-3 pl-5" id="exampleModalLabel">Bangladesh Tours:Sundarban</h2>
+                        
+                      
+                    </div>
+<!--                                body-->
+                    <div class="modal-body mr-5 ml-5 p-0">
+                      
+                        <div class="ad-modal-input">
+                            <form>
+                                <div class="form-group mb-3">
+                                  <label for="" class="col-form-label"><p><b>Title</b></p></label>
+                                  <input type="text" class="form-control">
+                                </div>
+                                <div class="form-group mt-3 pt-3">
+                                  <label for="" class="col-form-label"><p><b>Description</b></p></label>
+                                  <textarea class="form-control"></textarea>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="ad-modal-video">
+                            <div class="p-0">
+                                <video class="ad-edit-video" controls>
+                                <source src="resources/videos/video.mp4" type="video/mp4">
+  Your browser does not support HTML video.
+                                </video>
+                            </div>
+                            <div class="modal-video-description pl-3">
+                                <small>Video Name</small>
+                                <p>Bangladesh Tours: Sundarban</p>
+                            </div>
+                        </div>
+                      
+                    </div>
+<!--                                footer-->
+                                
+                    <div class="ad-modal-footer mt-0 mb-5 mr-5">
+                      <button type="button" class="btn btn-modal btn-secondary" data-dismiss="modal">Cancel</button>
+                      <button type="button" class="btn btn-modal btn-primary ml-2">UPLOAD</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
