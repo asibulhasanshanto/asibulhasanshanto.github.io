@@ -127,9 +127,6 @@ body
     margin-left: 2%;
     margin-top: 1%;
     min-height: 7%;
-/*    height: 90vh;*/
-/*    background: black;*/
-/*    overflow: scroll;*/
     
 }
 h2{
@@ -159,6 +156,69 @@ small{
     font-weight: 600;
     color:  rgba(128, 128, 128, 0.9)
 
+}
+.btn{
+    font-weight: 600;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 6rem;
+  height: 3rem;
+    margin: auto;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 2.3rem;
+  width: 2.3rem;
+  left: 0.35rem;
+  bottom: 0.35rem;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }
 /*==================Table properties================*/
 
@@ -243,11 +303,7 @@ td{
     border-radius: 5px;
     margin: auto 0px;
 }
-.btn_active,
-.btn_active:hover{
-    color: white;
-    background: #1980e1;
-}
+
 .system_variable{
     margin: auto;
     
@@ -464,7 +520,8 @@ td{
     width: 27%;
     height: 80%;
     font-size: 1.4rem;
-    border: 2px solid rgba(128, 128, 128, 0.51);
+    border: 2px solid rgba(128, 128, 128, 0.8);
+    color: rgba(128, 128, 128, 0.6);
     border-radius: 5px;
 }
 .ad-studio-input option{
@@ -572,6 +629,13 @@ td{
     font-weight: 500;
     border-radius: 0.7rem;
 }
+.custom-file label{
+    width: 100%;
+    font-size: 1.4rem;
+    
+    font-weight: 500;
+    border-radius: 0.7rem;
+}
 .ad-modal-input textarea{
     width: 100%;
     font-size: 1.4rem;
@@ -590,6 +654,7 @@ td{
 }
 .ad-edit-video{
     width: 100%;
+    max-height: 20rem;
     
 }
 .modal-video-description{
@@ -604,4 +669,119 @@ td{
     justify-content: flex-end;
     align-items: flex-start;
     
+}
+
+/*============events=================*/
+.events-top-nav{
+    height: 4.4rem;
+    width: 67%;
+    float: right;
+    display: flex;
+    align-items: baseline;justify-content: space-between;
+}
+.events-input{
+    width: 21%;
+    height: 80%;
+    font-size: 1.4rem;
+    border: 2px solid rgba(128, 128, 128, 0.8);
+    color: rgba(128, 128, 128, 0.6);
+    border-radius: 5px;
+}
+/*=================page setting==================================*/
+.page-setting{
+    width: 96%;
+    height: 72vh;
+    margin: auto;
+}
+
+.btn-group-page-setting{
+    width: 100%;
+    margin:2rem 2% 1rem 1%;
+    display: inline-block;
+}
+.btn-page-setting{
+    background: #d7dcde;
+    width: 32.5%;
+    height: 4rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.75;
+    border-radius: 5px;
+    margin: auto 0px;
+}
+.btn_active,
+.btn_active:hover{
+    color: white;
+    background:#1980e1;
+}
+
+/*social setting*/
+.social-setting{
+    height: 100%;
+    width: 100%;
+}
+
+.social-setting-inputs{
+    height: 80%;
+    width: 90%;
+    display: flex;flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.social-setting-buttons{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 8%;
+}
+.social-setting-buttons img{
+    height: 3.5rem;  
+}
+.social-setting-buttons input{
+    height: 90%;
+    width: 50%;
+    font-size: 1.2rem;
+}
+
+/*faq*/
+.faq{
+    height: 100%;
+    width: 97.5%;
+    display: none;
+    margin: auto;
+}
+.faq-heading{
+    height: 8%;
+}
+.faq-heading a{
+    font-size: 1.2rem;
+}
+.faq-body{
+    height: 91%;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+     scrollbar-width: none;
+}
+.faq-body::-webkit-scrollbar {
+  display: none;
+}
+.faq-body p{
+    font-weight: 600;
+}
+
+/*about us*/
+.about_us{
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+.about_us textarea{
+    height: 20rem;
+    width: 70%;
+    font-size: 1.2rem;
+    margin: auto;
 }

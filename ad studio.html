@@ -64,11 +64,11 @@
                         <ion-icon name="leaf"></ion-icon>   
                         <span>Add studio</span>
                 </a>
-                <a href="#" class="sidenav_link ">
+                <a href="events.html" class="sidenav_link ">
                         <ion-icon name="people-circle"></ion-icon>
                         <span>Circle History</span>
                 </a>
-                <a href="#" class="sidenav_link ">
+                <a href="page%20setting.html" class="sidenav_link ">
                         <ion-icon name="hammer"></ion-icon>
                         <span>Page setting</span>
                 </a>
@@ -311,15 +311,19 @@
                             </form>
                         </div>
                         <div class="ad-modal-video">
-                            <div class="p-0">
-                                <video class="ad-edit-video" controls>
+                            <div class="p-0" >
+                                <video class="ad-edit-video" controls id="upload-video-preview">
                                 <source src="resources/videos/video.mp4" type="video/mp4">
   Your browser does not support HTML video.
                                 </video>
                             </div>
-                            <div class="modal-video-description pl-3">
+                            <div class="modal-video-description pl-3" id="upload-video-description">
                                 <small>Video Name</small>
-                                <p>My First Vlog</p>
+                                <p>Bangladesh Tours: Sundarban</p>
+                            </div>
+                            <div class="custom-file" id="upload-video-chooser">
+                                <input type="file" class="custom-file-input" id="upload-video-input">
+                                <label class="custom-file-label" for="upload-video-input">Choose a video</label>
                             </div>
                         </div>
                       
@@ -333,5 +337,6 @@
                 </div>
             </div>
         </div>
+        <script src="resources/js/jQuery.js"></script>
     </body>
 </html>

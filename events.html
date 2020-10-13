@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--        icons-->
+        <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+<!--        fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+<!--        chart-->
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+<!--        bootstrap-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<!--        custom css-->
+        <link rel="stylesheet" href="resources/css/style.css">
+        <link rel="stylesheet" href="resources/css/query.css">
+        <!--        jQuery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!--        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+        <title>Events</title>
+    </head>
+    <body>
+        <section class="navigation">
+            <div class="sidebar">
+                <a href="dashboard.html" class="sidenav_link">
+                        <ion-icon name="analytics"></ion-icon>
+                        <span>Dashboard</span>
+                </a>
+                <a href="users.html" class="sidenav_link ">
+                        <ion-icon name="people"></ion-icon>
+                        <span>Users</span>
+                </a>
+                <a href="transactions.html" class="sidenav_link ">
+                        <ion-icon name="newspaper"></ion-icon>
+                        <span>transactions</span>
+                </a>
+                <a href="withdraws.html" class="sidenav_link ">
+                        <ion-icon name="cash"></ion-icon>
+                        <span>Withdraws</span>
+                </a>
+                <a href="payments.html" class="sidenav_link ">
+                        <ion-icon name="wallet"></ion-icon>
+                        <span>Payments</span>
+                </a>
+                <a href="payment%20Methods.html" class="sidenav_link ">
+                        <ion-icon name="card"></ion-icon>
+                        <span>Payment Methods</span>
+                </a>
+                <a href="level%20setup.html" class="sidenav_link ">
+                        <ion-icon name="speedometer"></ion-icon>
+                        <span>Level Setup</span>
+                </a>
+                <a href="helpline.html" class="sidenav_link ">
+                        <ion-icon name="help-circle"></ion-icon>
+                        <span>Help Line</span>
+                </a>
+                <a href="general%20setting.html" class="sidenav_link ">
+                        <ion-icon name="settings"></ion-icon>
+                        <span>General Setting</span>
+                </a>
+                <a href="ad%20studio.html" class="sidenav_link">
+                        <ion-icon name="leaf"></ion-icon>   
+                        <span>Add studio</span>
+                </a>
+                <a href="events.html" class="sidenav_link active">
+                        <ion-icon name="people-circle"></ion-icon>
+                        <span>Circle History</span>
+                </a>
+                <a href="page%20setting.html" class="sidenav_link ">
+                        <ion-icon name="hammer"></ion-icon>
+                        <span>Page setting</span>
+                </a>
+            </div>
+        </section>
+        <section class="page">
+            <div class="header">
+                <div class="header_image">
+                    <img src="resources/img/profile.jpg">
+                </div>
+            </div>
+            <div class="main_container">
+                <div class="content mb-2">
+                    <div class="float-left clearfix p-0 m-0">
+                        <h2>Events</h2>
+                    <p>Showing 10 users out of 1000</p>
+                    </div>
+                    <div class="events-top-nav">
+                        <input type="text" class="form-control events-input" placeholder="Clan Name">
+                        <input type="text" class="form-control events-input" placeholder="Clan Admin">
+                        
+                        <select class="custom-select events-input" >
+                            <option selected>SELECT STATUS</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                        
+                        
+                        <input type="date" class="form-control events-input" placeholder="Title">
+                        <a href="#" class="btn btn-primary pt-3 pb-3 pl-5 pr-5">SEARCH</a>
+                    </div>
+                </div>
+                       
+                <div class="ad-studio-body ml-4">
+                    
+                        <table class="table table-borderless">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="text-center">ID</th>
+                                <th scope="col" class="text-center">Clan Name</th>
+                                <th scope="col" class="text-center">Clan Admin</th>
+                                <th scope="col" class="text-center">Date</th>
+                                <th scope="col" class="text-center">Achieved Ruby</th>
+                                <th scope="col" class="text-center">Status</th>
+                                <th scope="col" class="text-center">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text-center">101</td>
+                                <td class="text-center">BD Tigers</td>
+                                <td class="text-center">Arif Reza</td>
+                                <td class="text-center">2 July 2011</td>
+                                <td class="text-center">250</td>
+                                <td class="text-center">Qualified</td>
+                                
+                                <td class="text-center">
+                                    <a href="#" class="btn btn-primary">VIEW</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">101</td>
+                                <td class="text-center">BD Tigers</td>
+                                <td class="text-center">Arif Reza</td>
+                                <td class="text-center">2 July 2011</td>
+                                <td class="text-center">250</td>
+                                <td class="text-center">Qualified</td>
+                                
+                                <td class="text-center">
+                                    <a href="#" class="btn btn-primary">VIEW</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">101</td>
+                                <td class="text-center">BD Tigers</td>
+                                <td class="text-center">Arif Reza</td>
+                                <td class="text-center">2 July 2011</td>
+                                <td class="text-center">250</td>
+                                <td class="text-center">Qualified</td>
+                                
+                                <td class="text-center">
+                                    <a href="#" class="btn btn-primary">VIEW</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">101</td>
+                                <td class="text-center">BD Tigers</td>
+                                <td class="text-center">Arif Reza</td>
+                                <td class="text-center">2 July 2011</td>
+                                <td class="text-center">250</td>
+                                <td class="text-center">Qualified</td>
+                                
+                                <td class="text-center">
+                                    <a href="#" class="btn btn-primary">VIEW</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">101</td>
+                                <td class="text-center">BD Tigers</td>
+                                <td class="text-center">Arif Reza</td>
+                                <td class="text-center">2 July 2011</td>
+                                <td class="text-center">250</td>
+                                <td class="text-center">Qualified</td>
+                                
+                                <td class="text-center">
+                                    <a href="#" class="btn btn-primary">VIEW</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">101</td>
+                                <td class="text-center">BD Tigers</td>
+                                <td class="text-center">Arif Reza</td>
+                                <td class="text-center">2 July 2011</td>
+                                <td class="text-center">250</td>
+                                <td class="text-center">Qualified</td>
+                                
+                                <td class="text-center">
+                                    <a href="#" class="btn btn-primary">VIEW</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">101</td>
+                                <td class="text-center">BD Tigers</td>
+                                <td class="text-center">Arif Reza</td>
+                                <td class="text-center">2 July 2011</td>
+                                <td class="text-center">250</td>
+                                <td class="text-center">Qualified</td>
+                                
+                                <td class="text-center">
+                                    <a href="#" class="btn btn-primary">VIEW</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">101</td>
+                                <td class="text-center">BD Tigers</td>
+                                <td class="text-center">Arif Reza</td>
+                                <td class="text-center">2 July 2011</td>
+                                <td class="text-center">250</td>
+                                <td class="text-center">Qualified</td>
+                                
+                                <td class="text-center">
+                                    <a href="#" class="btn btn-primary">VIEW</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">101</td>
+                                <td class="text-center">BD Tigers</td>
+                                <td class="text-center">Arif Reza</td>
+                                <td class="text-center">2 July 2011</td>
+                                <td class="text-center">250</td>
+                                <td class="text-center">Qualified</td>
+                                
+                                <td class="text-center">
+                                    <a href="#" class="btn btn-primary">VIEW</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">101</td>
+                                <td class="text-center">BD Tigers</td>
+                                <td class="text-center">Arif Reza</td>
+                                <td class="text-center">2 July 2011</td>
+                                <td class="text-center">250</td>
+                                <td class="text-center">Qualified</td>
+                                
+                                <td class="text-center">
+                                    <a href="#" class="btn btn-primary">VIEW</a>
+                                </td>
+                            </tr>
+                            
+                            
+                        </tbody>
+                    </table>
+                    
+                </div>
+                <!--                    pagination-->
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item disabled">
+                            <span class="page-link"> < </span>
+                        </li>
+                        <li class="page-item active" aria-current="page">
+                            <span class="page-link">
+                                1
+                                <span class="sr-only">(current)</span>
+                            </span>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">></a>
+                        </li>
+                    </ul>
+                
+            </div>
+        </section>
+    </body>
+</html>
