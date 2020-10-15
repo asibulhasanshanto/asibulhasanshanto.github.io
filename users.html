@@ -89,10 +89,29 @@
             </div>
             <div class="main_container">
                 <div class="content">
-                    <h2>Users</h2>
-                    <p>Showing 10 users out of 1000</p>
-                    
-                    <table class="table table-borderless">
+                    <div class="float-left clearfix">
+                        <h2>Users</h2>
+                        <p>Showing 10 users out of 1000</p>
+                    </div>
+                    <div class="users-top-nav">
+                        <input type="text" class="form-control users-input" placeholder="Name">
+                        <input type="text" class="form-control users-input" placeholder="Account No.">
+                        <input type="text" class="form-control users-input" placeholder="Email">
+                        
+                        <select class="custom-select users-input" >
+                            <option selected>Select Level</option>
+                            <option value="1">Level-1</option>
+                            <option value="2">Level-2</option>
+                            <option value="3">Level-3</option>
+                        </select>
+                        <select class="custom-select users-input" >
+                            <option selected>Select status</option>
+                            <option value="1">Active</option>
+                            <option value="2">Inactive</option>
+                            <option value="3">Banned</option>
+                        </select>
+                    </div>
+                    <table class="table table-borderless table-small mb-2">
                         <thead>
                             <tr>
                                 <th scope="col">Name</th>

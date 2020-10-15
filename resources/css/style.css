@@ -230,7 +230,7 @@ th
     
 }
 tr{
-    border-bottom: 2px solid rgba(128, 128, 128, 0.3);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.3);
 }
 td{
     font-size: 1.4rem;
@@ -255,6 +255,31 @@ td{
     border-radius: 10px;
 }
 .btn:disabled{opacity:1}
+
+.users-top-nav{
+    height: 4.4rem;
+    width: 67%;
+    float: right;
+    display: flex;
+    align-items: baseline;justify-content: space-between;
+}
+.users-input{
+    width: 19.5%;
+    height: 80%;
+    font-size: 1.4rem;
+    border: 2px solid rgba(128, 128, 128, 0.8);
+    color: rgba(128, 128, 128, 0.6);
+    border-radius: 5px;
+}
+.users-input option{
+    
+    font-size: 1.2rem;
+    
+}
+.table-small{
+    width: 90%;
+    margin: auto;
+}
 /*==================pagination================*/
 .page-link{
     border-radius: 5px;
