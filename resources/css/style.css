@@ -1025,6 +1025,15 @@ td{
     width: 25%;
     margin: 4rem;
     border-radius: 1rem;
+    box-shadow: 4px 4px 8px 0 rgba(0,0,0,0.2);
+    transition: all 0.3s;
+    
+    
+}
+.general-setting-button:hover{
+    
+    background: #0b6ac4;
+    box-shadow: 4px 4px 10px 0 rgba(0,0,0,0.2);
     
     
 }
@@ -1033,4 +1042,9 @@ td{
     color: white;
     padding-right: 1.5rem;
     
+}
+.policies-body{
+    width: 65%;
+    height: 73vh;
+    margin: auto 10%;
 }
