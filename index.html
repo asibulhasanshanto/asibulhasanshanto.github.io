@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <!-- fonts -->
+    <!-- source serif pro and alata -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,600;1,400;1,600;1,700&family=Josefin+Sans&family=Source+Serif+Pro:ital,wght@0,300;0,400;0,600;1,400;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Portfolio</title>
+  </head>
+  <body class="" id="body">
+    <div
+      class="font-asap wrapper_div w-screen m-0 p-0 text-primary-light dark:text-primary-dark"
+    >
+      <!-- header section -->
+      <section
+        class="h-[45vh] sm:h-[50vh] md:h-[60vh] lg:h-screen bg-slate-100 dark:bg-header-dark relative"
+      >
+        <!-- navbar -->
+        <nav class="top-0 dark:bg-header-dark w-full">
+          <div class="container mx-auto py-3 sm:py-8 flex justify-between">
+            <div class="logo">
+              <a href="index.html">
+                <img
+                  src="./src/images/logos/logo.png"
+                  alt="logo"
+                  class="w-12 h-12 lg:w-16 lg:h-16"
+                />
+              </a>
+            </div>
+            <div
+              class="mobile_menu hidden z-40 md:flex fixed w-full left-0 top-8 md:static md:w-auto items-center justify-center"
+              id="mobile_menu"
+            >
+              <ul
+                class="flex flex-col md:flex-row space-y-2 md:space-y-0 pb-2 md:pb-0 bg-slate-100 dark:bg-header-dark w-full items-center font-josefinSans text-xl md:text-2xl"
+              >
+                <li class="mr-8 nav_button">
+                  <a href="about.html">About</a>
+                </li>
+                <li class="mr-8 nav_button">
+                  <a href="projects.html">Portfolio</a>
+                </li>
+                <li class="mr-8 nav_button">
+                  <a href="contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <div class="dark_mode flex z-50 justify-center items-center">
+              <!-- input box named search -->
+              <div
+                class="search flex items-center justify-center w-24 md:w-32 relative"
+              >
+                <input
+                  type="text"
+                  name="price"
+                  id="price"
+                  class="flex w-full rounded-md mr-3 dark:bg-card-dark border-none px-3 py-2 dark:focus:border-card-dark focus:outline-none text-sm md:text-lg"
+                  placeholder="Search"
+                />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="h-4 w-4 md:w-6 md:h-6 absolute right-5 text-gray-400"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+                  />
+                </svg>
+              </div>
+              <!-- dark mode toggle button -->
+              <button
+                class="dark_mode_button focus:outline-none"
+                id="dark_mode_toggle_button"
+              >
+                <!-- svg icons for night and day mode -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  class="w-7 h-7 hidden fill-current text-black"
+                  id="moon"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"
+                  />
+                </svg>
+
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  class="fill-current hidden stroke-current text-white w-7 h-7"
+                  id="sun"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
+                  />
+                </svg>
+              </button>
+
+              <!-- Mobile menu button-->
+              <button
+                type="button"
+                class="inline-flex items-center justify-center rounded-md p-2 md:hidden dark:text-nav_button-dark dark:hover:text-white focus:outline-none duration-300"
+                aria-controls="mobile-menu"
+                aria-expanded="false"
+                id="mobile-menu-button"
+              >
+                <span class="sr-only">Open main menu</span>
+                <!--
+            Icon when menu is closed.
+
+            Heroicon name: outline/bars-3
+
+            Menu open: "hidden", Menu closed: "block"
+          -->
+                <svg
+                  class="block h-6 w-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                  id="three_bar"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                  />
+                </svg>
+                <!--
+            Icon when menu is open.
+
+            Heroicon name: outline/x-mark
+
+            Menu open: "block", Menu closed: "hidden"
+          -->
+                <svg
+                  class="hidden h-6 w-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                  id="x_mark"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </nav>
+        <!-- header content -->
+
+        <div
+          class="container mx-auto flex justify-center items-center h-[70%] lg:h-[80%]"
+        >
+          <div
+            class="text_contents pl-8 text-black dark:text-white w-[80%] md:w-[60%] lg:w-[50%] text-lg sm:text-xl md:text-3xl lg:text-4xl"
+          >
+            <p class="">
+              I'M
+              <span
+                class="font-sourceSerifPro mb-6 text-primary-light dark:text-primary-dark text-3xl sm:text-4xl md:text-6xl lg:text-8xl"
+                >Ivan Dan</span
+              >
+            </p>
+            <p class="leading-normal">
+              Python Developer & ERPNext <br />
+              Consultant
+            </p>
+            <button
+              class="text-xs sm:text-sm md:text-xl mt-5 px-5 rounded-md text-primary-light dark:text-primary-dark py-2 border-2 md:border-4 border-primary-light dark:border-primary-dark hover:bg-primary-light dark:hover:bg-primary-dark hover:font-bold hover:text-white transition duration-300"
+            >
+              Contact Me
+            </button>
+          </div>
+          <div class="imae w-1/2">
+            <img
+              cla
+              src="./src/images/person/final person 1.png"
+              alt="header"
+              class="absolute h-[60%] sm:h-[65%] md:h-[82%] lg:h-[90%] right-0 bottom-0 object-cover z-0"
+            />
+          </div>
+        </div>
+
+        <!-- header social links -->
+        <div
+          class="header_social_links absolute md:right-10 right-4 sm:right-5 lg:right-20 bottom-10 flex flex-col"
+        >
+          <ul class="flex flex-col items-center space-y-1">
+            <li
+              class="h-20 w-1 mb-3 bg-primary-light dark:bg-primary-dark"
+            ></li>
+            <li>
+              <a href="">
+                <ion-icon
+                  class="header_social_list"
+                  name="logo-facebook"
+                ></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <ion-icon
+                  class="header_social_list"
+                  name="logo-twitter"
+                ></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <ion-icon
+                  class="header_social_list"
+                  name="logo-linkedin"
+                ></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <ion-icon
+                  class="header_social_list"
+                  name="logo-whatsapp"
+                ></ion-icon>
+              </a>
+            </li>
+            <!-- twitter logo -->
+          </ul>
+        </div>
+      </section>
+    </div>
+
+    <!-- icons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <!-- custom script -->
+    <script src="/dist/script.js"></script>
+  </body>
+</html>
