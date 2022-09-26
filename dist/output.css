@@ -697,6 +697,22 @@ video {
   bottom: 2.5rem;
 }
 
+.top-10 {
+  top: 2.5rem;
+}
+
+.top-1 {
+  top: 0.25rem;
+}
+
+.top-16 {
+  top: 4rem;
+}
+
+.top-20 {
+  top: 5rem;
+}
+
 .z-40 {
   z-index: 40;
 }
