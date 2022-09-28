@@ -5,7 +5,10 @@
 
 /* create layers */
 @layer base {
-  
+  h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+  }
 }
 
 @layer components {
@@ -15,6 +18,18 @@
     }
     .header_social_list{
         @apply sm:w-6 sm:h-6 md:h-8 md:w-8 text-black dark:text-white;
+    }
+    .skill_cards_container{
+        @apply w-full flex  justify-center items-center;
+    }
+    .skill_card{
+        @apply w-[188px] h-[188px]  lg:w-[330px] lg:h-[330px] bg-card-dark flex flex-col rounded-3xl justify-center items-center m-1 md:m-2 lg:m-5;
+    }
+    .skill_card_image{
+        @apply h-1/4 ;
+    }
+    .skill_card_text{
+        @apply text-center text-white sm:text-lg md:text-2xl mt-7;
     }
 }
 

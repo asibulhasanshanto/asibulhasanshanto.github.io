@@ -13,6 +13,10 @@ module.exports = {
       },
     },
     extend: {
+      padding: {
+        '1/2': '50%',
+        full: '100%',
+      },
       screens: {
         sm: "480px",
       },

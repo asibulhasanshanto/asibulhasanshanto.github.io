@@ -9,14 +9,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,600;1,400;1,600;1,700&family=Josefin+Sans&family=Source+Serif+Pro:ital,wght@0,300;0,400;0,600;1,400;1,600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,600;1,400;1,600;1,700&family=Josefin+Sans&family=Source+Serif+Pro:wght@700&display=swap"
       rel="stylesheet"
     />
     <title>Portfolio</title>
   </head>
   <body class="" id="body">
     <div
-      class="font-asap wrapper_div w-screen m-0 p-0 text-primary-light dark:text-primary-dark"
+      class="font-asap wrapper_div w-full m-0 p-0 text-primary-light dark:text-primary-dark"
     >
       <!-- header section -->
       <section
@@ -254,6 +254,181 @@
             </li>
             <!-- twitter logo -->
           </ul>
+        </div>
+      </section>
+
+      <!-- about section -->
+      <section class="about_section dark:bg-bg_1-dark pt-32" id="about">
+        <div class="container mx-auto">
+          <h1 class="text-white font-sourceSerifPro mb-8">About</h1>
+          <div class="paragraph flex">
+            <div
+              class="border-t-4 border-primary-dark w-80 mt-4 mr-3 bg-white h-full"
+            ></div>
+            <p class="text-white text-3xl font-light leading-snug pb-8">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus
+              alias repudiandae exercitationem culpa, vel beatae dolore,
+              reprehenderit at voluptatibus facilis harum? Quibusdam placeat
+              aliquid deleniti enim, iure voluptatem debitis illo? Lorem ipsum,
+              dolor sit amet consectetur adipisicing elit. Ducimus alias. I am
+              <span class="text-primary-dark"
+                >trust worthy ,creative , and effective communictor</span
+              >
+              repudiandae exercitationem culpa, vel beatae dolore, reprehenderit
+              at voluptatibus facilis harum? Quibusdam placeat aliquid deleniti
+              enim, iure voluptatem.
+            </p>
+          </div>
+
+          <!-- skills cards (there will be 2 different versions of the skill section for small and over md screen size as it's not suitable to create such complex layout using css) -->
+          <div
+            class="skills_container w-full pt-32 flex flex-col justify-center items-center"
+          >
+            <h1 class="text-white font-sourceSerifPro mb-4">My Skills</h1>
+
+            <!-- skill cards in large screen -->
+            <div class="skils_card_large_screen hidden md:flex flex-col w-full">
+              <!-- row 1 with 4 cards -->
+              <div class="skill_cards_container">
+                <!-- python card -->
+                <div class="skill_card">
+                  <img
+                    src="./src/images/logos/python.png"
+                    alt="python"
+                    class="skill_card_image"
+                  />
+                  <p class="skill_card_text">Python</p>
+                </div>
+
+                <!-- flutter card -->
+                <div class="skill_card">
+                  <img
+                    src="./src/images/logos/flutter.png"
+                    alt="flutter"
+                    class="skill_card_image"
+                  />
+                  <p class="skill_card_text">Flutter</p>
+                </div>
+
+                <!-- ubuntu card -->
+                <div class="skill_card">
+                  <img
+                    src="./src/images/logos/ubuntu.png"
+                    alt="ubuntu"
+                    class="skill_card_image"
+                  />
+                  <p class="skill_card_text">Ubuntu</p>
+                </div>
+
+                <!-- git card -->
+                <div class="skill_card">
+                  <img
+                    src="./src/images/logos/git.png"
+                    alt="git"
+                    class="skill_card_image"
+                  />
+                  <p class="skill_card_text">Git Source <br>Control</p>
+                </div>
+              </div>
+
+              <!-- row 2 with 4 cards -->
+              <div class="skill_cards_container">
+                <!-- ERPNext card -->
+                <div class="skill_card">
+                  <img
+                    src="./src/images/logos/erp.png"
+                    alt="erpnext"
+                    class="skill_card_image"
+                  />
+                  <p class="skill_card_text">ERP Next</p>
+                </div>
+
+                <!-- mongodb card -->
+                <div class="skill_card">
+                  <img
+                    src="./src/images/logos/mongodb.png"
+                    alt="mongodb"
+                    class="skill_card_image"
+                  />
+                  <p class="skill_card_text">MongoDB</p>
+                </div>
+
+                <!-- html css card -->
+                <div class="skill_card">
+                  <img
+                    src="./src/images/logos/htmlcss.png"
+                    alt="htmlcss"
+                    class="skill_card_image"
+                  />
+                  <p class="skill_card_text">HTML & CSS</p>
+                </div>
+
+                <!-- javascript card -->
+                <div class="skill_card">
+                  <img
+                    src="./src/images/logos/js.png"
+                    alt="javascript"
+                    class="skill_card_image"
+                  />
+                  <p class="skill_card_text">JavaScript</p>
+                </div>
+              </div>
+
+              <!-- row 3 with 3 cards -->
+              <div class="skill_cards_container">
+                <!-- frappe card -->
+                <div class="skill_card">
+                  <img
+                    src="./src/images/logos/frappe.png"
+                    alt="frappe"
+                    class="skill_card_image"
+                  />
+                  <p class="skill_card_text">Frappe</p>
+                </div>
+                <!-- .Net card -->
+                <div class="skill_card">
+                  <img
+                    src="./src/images/logos/dotnet.png"
+                    alt="dotnet"
+                    class="skill_card_image"
+                  />
+                  <p class="skill_card_text">.Net</p>
+                </div>
+
+                <!-- flask card -->
+                <div class="skill_card">
+                  <img
+                    src="./src/images/logos/flask2.png"
+                    alt="flask"
+                    class="skill_card_image"
+                  />
+                  <p class="skill_card_text">Flask Microweb <br>Framework</p>
+                </div>
+              </div>
+
+              <!-- row 4 with 2 cards -->
+              <div class="skill_cards_container">
+                <!-- mysql card -->
+                <div class="skill_card">
+                  <img
+                    src="./src/images/logos/mysql.png"
+                    alt="mysql"
+                    class="skill_card_image"
+                  />
+                  <p class="skill_card_text">MySQL</p>
+                </div>
+                <!-- aws card -->
+                <div class="skill_card">
+                  <img
+                    src="./src/images/logos/aws.png"
+                    alt="aws"
+                    class="skill_card_image"
+                  />
+                  <p class="skill_card_text">AWS</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </div>
