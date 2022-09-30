@@ -604,6 +604,12 @@ h1 {
   }
 }
 
+@media (min-width: 2000px) {
+  .container {
+    max-width: 2000px;
+  }
+}
+
 /* create a compopnent named nav_button */
 
 .nav_button {
@@ -1157,6 +1163,10 @@ h1 {
   height: 0.5rem;
 }
 
+.h-\[23rem\] {
+  height: 23rem;
+}
+
 .w-full {
   width: 100%;
 }
@@ -1353,6 +1363,11 @@ h1 {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .pb-2 {
@@ -1571,6 +1586,10 @@ h1 {
     height: 0.75rem;
   }
 
+  .sm\:h-\[25rem\] {
+    height: 25rem;
+  }
+
   .sm\:w-3 {
     width: 0.75rem;
   }
@@ -1637,6 +1656,10 @@ h1 {
     height: 82%;
   }
 
+  .md\:h-\[30rem\] {
+    height: 30rem;
+  }
+
   .md\:w-auto {
     width: auto;
   }
@@ -1674,6 +1697,16 @@ h1 {
 
   .md\:border-4 {
     border-width: 4px;
+  }
+
+  .md\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .md\:py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 
   .md\:pb-0 {
@@ -1735,6 +1768,10 @@ h1 {
     height: 90%;
   }
 
+  .lg\:h-\[50rem\] {
+    height: 50rem;
+  }
+
   .lg\:w-16 {
     width: 4rem;
   }
@@ -1769,5 +1806,25 @@ h1 {
   .lg\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:h-screen {
+    height: 100vh;
+  }
+}
+
+@media (min-width: 2000px) {
+  .\33xl\:relative {
+    position: relative;
+  }
+
+  .\33xl\:-bottom-20 {
+    bottom: -5rem;
+  }
+
+  .\33xl\:h-\[67rem\] {
+    height: 67rem;
   }
 }

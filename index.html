@@ -20,7 +20,7 @@
     >
       <!-- header section -->
       <section
-        class="h-[45vh] sm:h-[50vh] md:h-[60vh] lg:h-screen bg-slate-100 dark:bg-header-dark relative"
+        class="h-[23rem] sm:h-[25rem] md:h-[30rem] lg:h-[50rem] xl:h-screen 3xl:h-[67rem] bg-slate-100 dark:bg-header-dark relative"
       >
         <!-- navbar -->
         <nav class="top-0 dark:bg-header-dark w-full">
@@ -44,7 +44,7 @@
                 class="flex flex-col md:flex-row space-y-2 md:space-y-0 pb-2 md:pb-0 bg-slate-100 dark:bg-header-dark w-full items-center font-josefinSans text-xl md:text-2xl"
               >
                 <li class="mr-8 nav_button">
-                  <a href="#about">About</button>
+                  <a href="#about">About</a>
                 </li>
                 <li class="mr-8 nav_button">
                   <a href="#portfolio">Portfolio</a>
@@ -180,7 +180,7 @@
         <!-- header content -->
 
         <div
-          class="container mx-auto flex justify-center items-center h-[70%] lg:h-[80%]"
+          class="container 3xl:relative mx-auto flex justify-center items-center h-[70%] lg:h-[80%]"
         >
           <div
             class="text_contents pl-8 text-black dark:text-white w-[80%] md:w-[60%] lg:w-[50%] text-lg sm:text-xl md:text-3xl lg:text-4xl"
@@ -207,7 +207,7 @@
               cla
               src="./src/images/person/final person 1.png"
               alt="header"
-              class="absolute h-[60%] sm:h-[65%] md:h-[82%] lg:h-[90%] right-0 bottom-0 object-cover z-0"
+              class="absolute h-[60%] sm:h-[65%] md:h-[82%] lg:h-[90%] 3xl:-bottom-20 right-0 bottom-0 object-cover z-0"
             />
           </div>
         </div>
@@ -591,10 +591,11 @@
 
       <!-- portfolio section -->
       <section
-        class=" text-black dark:text-white portfolio_section dark:bg-bg_1-dark section_padding" id="portfolio"
+        class="text-black dark:text-white portfolio_section dark:bg-bg_1-dark section_padding"
+        id="portfolio"
       >
         <div
-          class="container pb-36 relative  mx-auto flex flex-col justify-center items-center"
+          class="container pb-36 relative mx-auto flex flex-col justify-center items-center"
         >
           <h1 class="responsive_h1 mx-auto font-sourceSerifPro pb-8 z-[2]">
             Portfolio
@@ -849,44 +850,30 @@
               </div>
             </div>
           </div>
-          <button class="primary_btn px-8 py-4 font-bold text-2xl rounded-lg">
+          <button class="primary_btn px-4 py-2 text-xl md:px-8 md:py-4 font-bold md:text-2xl rounded-lg">
             View More
           </button>
 
           <!-- the background balls of portfolio section -->
-          <div class="portfolio_balls absolute right-10 -top-32 md:right-12 lg:right-16 md:-top-36 lg:-top-52  grid grid-cols-4 grid-row-4 gap-x-6 gap-y-8 md:gap-x-10 md:gap-y-12  lg:gap-x-12 lg:gap-y-20 ">
-            <div class="ball h-3 w-3 ">
-            </div>
-            <div class="ball h-4 w-4 ">
-            </div>
-            <div class="ball h-4 w-4 ">
-            </div>
-            <div class="ball h-4 w-4 ">
-            </div>
-            <div class="ball h-3 w-3 ">
-            </div>
-            <div class="ball h-3 w-3 ">
-            </div>
-            <div class="ball h-3 w-3 ">
-            </div>
-            <div class="ball h-3 w-3 ">
-            </div>
-            <div class="ball h-3 w-3 ">
-            </div>
-            <div class="ball h-2.5 w-2.5 ">
-            </div>
-            <div class="ball h-3 w-3 ">
-            </div>
-            <div class="ball h-3 w-3 ">
-            </div>
-            <div class="ball h-3 w-3 ">
-            </div>
-            <div class="ball h-4 w-4 ">
-            </div>
-            <div class="ball h-3 w-3 ">
-            </div>
-            <div class="ball h-4 w-4 ">
-            </div>
+          <div
+            class="portfolio_balls absolute right-10 -top-32 md:right-12 lg:right-16 md:-top-36 lg:-top-52 grid grid-cols-4 grid-row-4 gap-x-6 gap-y-8 md:gap-x-10 md:gap-y-12 lg:gap-x-12 lg:gap-y-20"
+          >
+            <div class="ball h-3 w-3"></div>
+            <div class="ball h-4 w-4"></div>
+            <div class="ball h-4 w-4"></div>
+            <div class="ball h-4 w-4"></div>
+            <div class="ball h-3 w-3"></div>
+            <div class="ball h-3 w-3"></div>
+            <div class="ball h-3 w-3"></div>
+            <div class="ball h-3 w-3"></div>
+            <div class="ball h-3 w-3"></div>
+            <div class="ball h-2.5 w-2.5"></div>
+            <div class="ball h-3 w-3"></div>
+            <div class="ball h-3 w-3"></div>
+            <div class="ball h-3 w-3"></div>
+            <div class="ball h-4 w-4"></div>
+            <div class="ball h-3 w-3"></div>
+            <div class="ball h-4 w-4"></div>
           </div>
         </div>
       </section>

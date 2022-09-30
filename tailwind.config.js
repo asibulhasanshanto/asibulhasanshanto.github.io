@@ -19,6 +19,7 @@ module.exports = {
       },
       screens: {
         sm: "480px",
+        '3xl': "2000px",
       },
       fontFamily: {
         sourceSerifPro: ["Source Serif Pro", "serif"],
