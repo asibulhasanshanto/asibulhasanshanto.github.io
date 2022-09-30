@@ -4,10 +4,14 @@
 
 /* create layers */
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
   h1 {
     font-size: 3.5rem;
     font-weight: 700;
   }
+  
 }
 
 @layer components {
@@ -22,7 +26,7 @@
     @apply w-full flex  justify-center items-center;
   }
   .skill_card {
-    @apply  shadow-lg h-[180px] w-[180px] sm:h-[220px] sm:w-[220px] md:w-[170px] md:h-[170px] lg:h-[224px] lg:w-[224px]  xl:w-[330px] xl:h-[330px] dark:hover:bg-primary_hover-dark bg-slate-600 hover:bg-primary-light dark:bg-card-dark  flex flex-col rounded-3xl justify-center items-center m-1 md:m-2 lg:m-4 xl:m-5 duration-300;
+    @apply z-[2] shadow-lg h-[180px] w-[180px] sm:h-[220px] sm:w-[220px] md:w-[170px] md:h-[170px] lg:h-[224px] lg:w-[224px]  xl:w-[330px] xl:h-[330px] dark:hover:bg-primary_hover-dark bg-slate-600 hover:bg-primary-light dark:bg-card-dark  flex flex-col rounded-3xl justify-center items-center m-1 md:m-2 lg:m-4 xl:m-5 duration-300;
   }
   .skill_card_image {
     @apply h-1/4;
@@ -30,11 +34,38 @@
   .skill_card_text {
     @apply text-center text-white sm:text-xl md:text-xl lg:text-2xl mt-7;
   }
-  .responsive_h1{
+  .responsive_h1 {
     @apply text-3xl sm:text-4xl md:text-6xl lg:text-7xl;
   }
-  .section_padding{
+  .section_padding {
     @apply pt-10 md:pt-16 lg:pt-28 xl:pt-32;
+  }
+  .portfolio_card {
+    @apply h-[300px] sm:h-[200px] md:h-[380px] xl:h-[430px] relative;
+  }
+  .primary_btn {
+    @apply bg-primary-dark text-bg_1-dark hover:bg-primary-light_hover duration-300 ease-in-out;
+  }
+  .portfolio_card_bg_img {
+    @apply object-cover h-full w-full;
+  }
+  .portfolio_hover_cover {
+    @apply items-center justify-center absolute top-0 h-0 w-full backdrop-blur-sm bg-black/30 duration-300;
+  }
+  .portfolio_card_hover_content {
+    @apply flex-col justify-center items-center  duration-500  w-full text-white;
+  }
+  .portfolio_card_hover_h3 {
+    @apply font-bold text-2xl sm:text-xl md:text-3xl;
+  }
+  .portfolio_card_hover_p {
+    @apply w-[80%] sm:w-[90%] md:w-[70%] lg:w-[50%] font-light leading-none text-center text-sm sm:text-xs md:text-sm lg:text-lg mb-2 line-clamp-3;
+  }
+  .portfolio_card_hover_btn {
+    @apply flex items-center justify-center px-3 py-1 sm:px-2 sm:text-sm md:text-lg md:px-3 rounded-lg;
+  }
+  .ball{
+    @apply bg-primary-dark dark:bg-balls_color rounded-full z-0 ;
   }
 }
 

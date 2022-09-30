@@ -6,7 +6,9 @@ var cross = document.getElementById("x_mark");
 var body = document.getElementById("body");
 var moon = document.getElementById("moon");
 var sun = document.getElementById("sun");
-var dark_mode_toggle_button = document.getElementById("dark_mode_toggle_button");
+var dark_mode_toggle_button = document.getElementById(
+  "dark_mode_toggle_button"
+);
 
 // mobile and desktop menu toggle
 button.addEventListener("click", function () {
@@ -35,33 +37,33 @@ if (
 ) {
   enableDarkMode();
 } else {
-    disableDarkMode();
+  disableDarkMode();
 }
 
 //click event to toggle dark mode
 dark_mode_toggle_button.addEventListener("click", function () {
-    if (body.classList.contains("dark")) {
-        disableDarkMode();
-    } else {
-        enableDarkMode();
-    }
+  if (body.classList.contains("dark")) {
+    disableDarkMode();
+  } else {
+    enableDarkMode();
+  }
 });
 
 // function to enable dark mode
 function enableDarkMode() {
-    body.classList.add("dark");
-    moon.classList.add("hidden");
-    sun.classList.remove("hidden");
-    sun.classList.add("block");
-    localStorage.theme = "dark";
+  body.classList.add("dark");
+  moon.classList.add("hidden");
+  sun.classList.remove("hidden");
+  sun.classList.add("block");
+  localStorage.theme = "dark";
 }
 
 // function to disable dark mode
 function disableDarkMode() {
-    body.classList.remove("dark");
-    sun.classList.remove("block");
-    sun.classList.add("hidden");
-    moon.classList.remove("hidden");
-    localStorage.theme = "light";
+  body.classList.remove("dark");
+  sun.classList.remove("block");
+  sun.classList.add("hidden");
+  moon.classList.remove("hidden");
+  localStorage.theme = "light";
 }
 

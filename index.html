@@ -37,20 +37,20 @@
 
             <!-- nav links (also mobile menu) -->
             <div
-              class="mobile_menu hidden z-40 md:flex fixed w-full left-0 top-20 md:static md:w-auto items-center justify-center"
+              class="mobile_menu hidden z-40 md:flex absolute w-full left-0 top-20 md:static md:w-auto items-center justify-center"
               id="mobile_menu"
             >
               <ul
                 class="flex flex-col md:flex-row space-y-2 md:space-y-0 pb-2 md:pb-0 bg-slate-100 dark:bg-header-dark w-full items-center font-josefinSans text-xl md:text-2xl"
               >
                 <li class="mr-8 nav_button">
-                  <a href="about.html">About</a>
+                  <a href="#about">About</button>
                 </li>
                 <li class="mr-8 nav_button">
-                  <a href="projects.html">Portfolio</a>
+                  <a href="#portfolio">Portfolio</a>
                 </li>
                 <li class="mr-8 nav_button">
-                  <a href="contact.html">Contact</a>
+                  <a href="#">Contact</a>
                 </li>
               </ul>
             </div>
@@ -197,7 +197,7 @@
               Consultant
             </p>
             <button
-              class="text-xs sm:text-sm md:text-xl mt-5 px-5 rounded-md text-primary-light dark:text-primary-dark py-2 border-2 md:border-4 border-primary-light dark:border-primary-dark hover:bg-primary-light dark:hover:bg-primary-dark hover:font-bold hover:text-white transition duration-300"
+              class="text-xs sm:text-sm md:text-xl mt-5 px-5 rounded-md text-primary-light dark:text-primary-dark py-2 border-2 md:border-4 border-primary-light dark:border-primary-dark hover:bg-primary-light dark:hover:bg-primary-dark hover:font-bold hover:text-white dark:hover:text-white transition duration-300"
             >
               Contact Me
             </button>
@@ -258,14 +258,19 @@
       </section>
 
       <!-- about section -->
-      <section class="text-black dark:text-white about_section dark:bg-bg_1-dark section_padding" id="about">
+      <section
+        class="text-black dark:text-white about_section dark:bg-bg_1-dark section_padding"
+        id="about"
+      >
         <div class="container mx-auto">
-          <h1 class=" responsive_h1 font-sourceSerifPro mb-8">About</h1>
-          <div class=" paragraph flex">
+          <h1 class="responsive_h1 font-sourceSerifPro mb-8">About</h1>
+          <div class="paragraph flex">
             <div
               class="border-t-4 border-primary-dark w-80 mt-4 mr-3 bg-white h-full"
             ></div>
-            <p class=" texl-lg sm:text-xl md:text-2xl lg:text-3xl font-light leading-snug pb-8">
+            <p
+              class="texl-lg sm:text-xl md:text-2xl lg:text-3xl font-light leading-snug pb-8"
+            >
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus
               alias repudiandae exercitationem culpa, vel beatae dolore,
               reprehenderit at voluptatibus facilis harum? Quibusdam placeat
@@ -327,7 +332,7 @@
                     alt="git"
                     class="skill_card_image"
                   />
-                  <p class="skill_card_text">Git Source <br>Control</p>
+                  <p class="skill_card_text">Git Source <br />Control</p>
                 </div>
               </div>
 
@@ -402,7 +407,7 @@
                     alt="flask"
                     class="skill_card_image"
                   />
-                  <p class="skill_card_text">Flask Microweb <br>Framework</p>
+                  <p class="skill_card_text">Flask Microweb <br />Framework</p>
                 </div>
               </div>
 
@@ -473,7 +478,7 @@
                     alt="git"
                     class="skill_card_image"
                   />
-                  <p class="skill_card_text">Git Source <br>Control</p>
+                  <p class="skill_card_text">Git Source <br />Control</p>
                 </div>
               </div>
 
@@ -554,7 +559,7 @@
                     alt="flask"
                     class="skill_card_image"
                   />
-                  <p class="skill_card_text">Flask Microweb <br>Framework</p>
+                  <p class="skill_card_text">Flask Microweb <br />Framework</p>
                 </div>
                 <!-- mysql card -->
                 <div class="skill_card">
@@ -579,6 +584,308 @@
                   <p class="skill_card_text">AWS</p>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- portfolio section -->
+      <section
+        class=" text-black dark:text-white portfolio_section dark:bg-bg_1-dark section_padding" id="portfolio"
+      >
+        <div
+          class="container pb-36 relative  mx-auto flex flex-col justify-center items-center"
+        >
+          <h1 class="responsive_h1 mx-auto font-sourceSerifPro pb-8 z-[2]">
+            Portfolio
+          </h1>
+          <div
+            class="portfolio_card_container z-[2] w-full px-10 pb-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-7"
+          >
+            <div class="portfolio_card group">
+              <img
+                src="./src/images/logos/portfolio_1.PNG"
+                class="portfolio_card_bg_img"
+                alt="portfolio image 1"
+              />
+              <div
+                class="portfolio_hover_cover group-hover:flex group-hover:h-full"
+              >
+                <div
+                  class="group-hover:flex portfolio_card_hover_content hidden"
+                >
+                  <h3 class="portfolio_card_hover_h3">Amazon Scrapper</h3>
+                  <p class="portfolio_card_hover_p">
+                    A simple blog which has user authentication such as sign
+                    up,sign in Lorem ipsum dolor, sit amet consectetur
+                    adipisicing elit. Officiis culpa cupiditate vitae corrupti
+                    fugit cumque dolor soluta, nostrum, voluptate repudiandae
+                    optio qui? Accusamus laborum autem, totam dignissimos
+                    blanditiis minima veniam.
+                  </p>
+                  <a href="#" class="primary_btn portfolio_card_hover_btn">
+                    See More
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-4 h-4 sm:h-3 sm:w-3 ml-2"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio_card group">
+              <img
+                src="./src/images/logos/portfolio_2.PNG"
+                class="portfolio_card_bg_img"
+                alt="portfolio image 2"
+              />
+              <div
+                class="portfolio_hover_cover group-hover:flex group-hover:h-full"
+              >
+                <div
+                  class="group-hover:flex portfolio_card_hover_content hidden"
+                >
+                  <h3 class="portfolio_card_hover_h3">Amazon Scrapper</h3>
+                  <p class="portfolio_card_hover_p">
+                    A simple blog which has user authentication such as sign
+                    up,sign in Lorem ipsum dolor, sit amet consectetur
+                    adipisicing elit. Officiis culpa cupiditate vitae corrupti
+                    fugit cumque dolor soluta, nostrum, voluptate repudiandae
+                    optio qui? Accusamus laborum autem, totam dignissimos
+                    blanditiis minima veniam.
+                  </p>
+                  <a href="#" class="primary_btn portfolio_card_hover_btn">
+                    See More
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-4 h-4 sm:h-3 sm:w-3 ml-2"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio_card group">
+              <img
+                src="./src/images/logos/portfolio_3.PNG"
+                class="portfolio_card_bg_img"
+                alt="portfolio image 3"
+              />
+              <div
+                class="portfolio_hover_cover group-hover:flex group-hover:h-full"
+              >
+                <div
+                  class="group-hover:flex portfolio_card_hover_content hidden"
+                >
+                  <h3 class="portfolio_card_hover_h3">Amazon Scrapper</h3>
+                  <p class="portfolio_card_hover_p">
+                    A simple blog which has user authentication such as sign
+                    up,sign in Lorem ipsum dolor, sit amet consectetur
+                    adipisicing elit. Officiis culpa cupiditate vitae corrupti
+                    fugit cumque dolor soluta, nostrum, voluptate repudiandae
+                    optio qui? Accusamus laborum autem, totam dignissimos
+                    blanditiis minima veniam.
+                  </p>
+                  <a href="#" class="primary_btn portfolio_card_hover_btn">
+                    See More
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-4 h-4 sm:h-3 sm:w-3 ml-2"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio_card group">
+              <img
+                src="./src/images/logos/portfolio_4.PNG"
+                class="portfolio_card_bg_img"
+                alt="portfolio image 4"
+              />
+              <div
+                class="portfolio_hover_cover group-hover:flex group-hover:h-full"
+              >
+                <div
+                  class="group-hover:flex portfolio_card_hover_content hidden"
+                >
+                  <h3 class="portfolio_card_hover_h3">Amazon Scrapper</h3>
+                  <p class="portfolio_card_hover_p">
+                    A simple blog which has user authentication such as sign
+                    up,sign in Lorem ipsum dolor, sit amet consectetur
+                    adipisicing elit. Officiis culpa cupiditate vitae corrupti
+                    fugit cumque dolor soluta, nostrum, voluptate repudiandae
+                    optio qui? Accusamus laborum autem, totam dignissimos
+                    blanditiis minima veniam.
+                  </p>
+                  <a href="#" class="primary_btn portfolio_card_hover_btn">
+                    See More
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-4 h-4 sm:h-3 sm:w-3 ml-2"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio_card group">
+              <img
+                src="./src/images/logos/portfolio_5.PNG"
+                class="portfolio_card_bg_img"
+                alt="portfolio image 5"
+              />
+              <div
+                class="portfolio_hover_cover group-hover:flex group-hover:h-full"
+              >
+                <div
+                  class="group-hover:flex portfolio_card_hover_content hidden"
+                >
+                  <h3 class="portfolio_card_hover_h3">Amazon Scrapper</h3>
+                  <p class="portfolio_card_hover_p">
+                    A simple blog which has user authentication such as sign
+                    up,sign in Lorem ipsum dolor, sit amet consectetur
+                    adipisicing elit. Officiis culpa cupiditate vitae corrupti
+                    fugit cumque dolor soluta, nostrum, voluptate repudiandae
+                    optio qui? Accusamus laborum autem, totam dignissimos
+                    blanditiis minima veniam.
+                  </p>
+                  <a href="#" class="primary_btn portfolio_card_hover_btn">
+                    See More
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-4 h-4 sm:h-3 sm:w-3 ml-2"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio_card group">
+              <img
+                src="./src/images/logos/portfolio_6.PNG"
+                class="portfolio_card_bg_img"
+                alt="portfolio image 6"
+              />
+              <div
+                class="portfolio_hover_cover group-hover:flex group-hover:h-full"
+              >
+                <div
+                  class="group-hover:flex portfolio_card_hover_content hidden"
+                >
+                  <h3 class="portfolio_card_hover_h3">Amazon Scrapper</h3>
+                  <p class="portfolio_card_hover_p">
+                    A simple blog which has user authentication such as sign
+                    up,sign in Lorem ipsum dolor, sit amet consectetur
+                    adipisicing elit. Officiis culpa cupiditate vitae corrupti
+                    fugit cumque dolor soluta, nostrum, voluptate repudiandae
+                    optio qui? Accusamus laborum autem, totam dignissimos
+                    blanditiis minima veniam.
+                  </p>
+                  <a href="#" class="primary_btn portfolio_card_hover_btn">
+                    See More
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-4 h-4 sm:h-3 sm:w-3 ml-2"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="primary_btn px-8 py-4 font-bold text-2xl rounded-lg">
+            View More
+          </button>
+
+          <!-- the background balls of portfolio section -->
+          <div class="portfolio_balls absolute right-10 -top-32 md:right-12 lg:right-16 md:-top-36 lg:-top-52  grid grid-cols-4 grid-row-4 gap-x-6 gap-y-8 md:gap-x-10 md:gap-y-12  lg:gap-x-12 lg:gap-y-20 ">
+            <div class="ball h-3 w-3 ">
+            </div>
+            <div class="ball h-4 w-4 ">
+            </div>
+            <div class="ball h-4 w-4 ">
+            </div>
+            <div class="ball h-4 w-4 ">
+            </div>
+            <div class="ball h-3 w-3 ">
+            </div>
+            <div class="ball h-3 w-3 ">
+            </div>
+            <div class="ball h-3 w-3 ">
+            </div>
+            <div class="ball h-3 w-3 ">
+            </div>
+            <div class="ball h-3 w-3 ">
+            </div>
+            <div class="ball h-2.5 w-2.5 ">
+            </div>
+            <div class="ball h-3 w-3 ">
+            </div>
+            <div class="ball h-3 w-3 ">
+            </div>
+            <div class="ball h-3 w-3 ">
+            </div>
+            <div class="ball h-4 w-4 ">
+            </div>
+            <div class="ball h-3 w-3 ">
+            </div>
+            <div class="ball h-4 w-4 ">
             </div>
           </div>
         </div>
