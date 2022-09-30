@@ -258,14 +258,14 @@
       </section>
 
       <!-- about section -->
-      <section class="about_section dark:bg-bg_1-dark pt-32" id="about">
+      <section class="text-black dark:text-white about_section dark:bg-bg_1-dark section_padding" id="about">
         <div class="container mx-auto">
-          <h1 class="text-white font-sourceSerifPro mb-8">About</h1>
-          <div class="paragraph flex">
+          <h1 class=" responsive_h1 font-sourceSerifPro mb-8">About</h1>
+          <div class=" paragraph flex">
             <div
               class="border-t-4 border-primary-dark w-80 mt-4 mr-3 bg-white h-full"
             ></div>
-            <p class="text-white text-3xl font-light leading-snug pb-8">
+            <p class=" texl-lg sm:text-xl md:text-2xl lg:text-3xl font-light leading-snug pb-8">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus
               alias repudiandae exercitationem culpa, vel beatae dolore,
               reprehenderit at voluptatibus facilis harum? Quibusdam placeat
@@ -280,13 +280,13 @@
             </p>
           </div>
 
-          <!-- skills cards (there will be 2 different versions of the skill section for small and over md screen size as it's not suitable to create such complex layout using css) -->
+          <!-- skills cards (there will be 2 different versions of the skill cards section for small and over md screen size . It'll ba handled with js or other js framworks after building the backend) -->
           <div
-            class="skills_container w-full pt-32 flex flex-col justify-center items-center"
+            class="skills_container w-full section_padding flex flex-col justify-center items-center"
           >
-            <h1 class="text-white font-sourceSerifPro mb-4">My Skills</h1>
+            <h1 class="responsive_h1 font-sourceSerifPro mb-4">My Skills</h1>
 
-            <!-- skill cards in large screen -->
+            <!-- skill cards in large,extra large and medium screen -->
             <div class="skils_card_large_screen hidden md:flex flex-col w-full">
               <!-- row 1 with 4 cards -->
               <div class="skill_cards_container">
@@ -420,7 +420,159 @@
                 <!-- aws card -->
                 <div class="skill_card">
                   <img
-                    src="./src/images/logos/aws.png"
+                    src="./src/images/logos/aws2.png"
+                    alt="aws"
+                    class="skill_card_image"
+                  />
+                  <p class="skill_card_text">AWS</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- skill cards in small and extra small screen -->
+            <div class="skill_card_small_screen flex flex-col w-full md:hidden">
+              <!-- row 1 with 2 cards -->
+              <div class="skill_cards_container">
+                <!-- python card -->
+                <div class="skill_card">
+                  <img
+                    src="./src/images/logos/python.png"
+                    alt="python"
+                    class="skill_card_image"
+                  />
+                  <p class="skill_card_text">Python</p>
+                </div>
+
+                <!-- flutter card -->
+                <div class="skill_card">
+                  <img
+                    src="./src/images/logos/flutter.png"
+                    alt="flutter"
+                    class="skill_card_image"
+                  />
+                  <p class="skill_card_text">Flutter</p>
+                </div>
+              </div>
+
+              <!-- row 2 with 2 cards -->
+              <div class="skill_cards_container">
+                <!-- ubuntu card -->
+                <div class="skill_card">
+                  <img
+                    src="./src/images/logos/ubuntu.png"
+                    alt="ubuntu"
+                    class="skill_card_image"
+                  />
+                  <p class="skill_card_text">Ubuntu</p>
+                </div>
+
+                <!-- git card -->
+                <div class="skill_card">
+                  <img
+                    src="./src/images/logos/git.png"
+                    alt="git"
+                    class="skill_card_image"
+                  />
+                  <p class="skill_card_text">Git Source <br>Control</p>
+                </div>
+              </div>
+
+              <!-- row 3 with 2 cards -->
+              <div class="skill_cards_container">
+                <!-- ERPNext card -->
+                <div class="skill_card">
+                  <img
+                    src="./src/images/logos/erp.png"
+                    alt="erpnext"
+                    class="skill_card_image"
+                  />
+                  <p class="skill_card_text">ERP Next</p>
+                </div>
+
+                <!-- mongodb card -->
+                <div class="skill_card">
+                  <img
+                    src="./src/images/logos/mongodb.png"
+                    alt="mongodb"
+                    class="skill_card_image"
+                  />
+                  <p class="skill_card_text">MongoDB</p>
+                </div>
+              </div>
+
+              <!-- row 4 with 2 cards -->
+              <div class="skill_cards_container">
+                <!-- html css card -->
+                <div class="skill_card">
+                  <img
+                    src="./src/images/logos/htmlcss.png"
+                    alt="htmlcss"
+                    class="skill_card_image"
+                  />
+                  <p class="skill_card_text">HTML & CSS</p>
+                </div>
+
+                <!-- javascript card -->
+                <div class="skill_card">
+                  <img
+                    src="./src/images/logos/js.png"
+                    alt="javascript"
+                    class="skill_card_image"
+                  />
+                  <p class="skill_card_text">JavaScript</p>
+                </div>
+              </div>
+
+              <!-- row 5 with 2 cards -->
+              <div class="skill_cards_container">
+                <!-- frappe card -->
+                <div class="skill_card">
+                  <img
+                    src="./src/images/logos/frappe.png"
+                    alt="frappe"
+                    class="skill_card_image"
+                  />
+                  <p class="skill_card_text">Frappe</p>
+                </div>
+                <!-- .Net card -->
+                <div class="skill_card">
+                  <img
+                    src="./src/images/logos/dotnet.png"
+                    alt="dotnet"
+                    class="skill_card_image"
+                  />
+                  <p class="skill_card_text">.Net</p>
+                </div>
+              </div>
+
+              <!-- row 6 with 2 cards -->
+              <div class="skill_cards_container">
+                <!-- flask card -->
+                <div class="skill_card">
+                  <img
+                    src="./src/images/logos/flask2.png"
+                    alt="flask"
+                    class="skill_card_image"
+                  />
+                  <p class="skill_card_text">Flask Microweb <br>Framework</p>
+                </div>
+                <!-- mysql card -->
+                <div class="skill_card">
+                  <img
+                    src="./src/images/logos/mysql.png"
+                    alt="mysql"
+                    class="skill_card_image"
+                  />
+                  <p class="skill_card_text">MySQL</p>
+                </div>
+              </div>
+
+              <!-- row 7 with 1 card -->
+              <div class="skill_cards_container">
+                <!-- aws card -->
+                <div class="skill_card">
+                  <img
+                    src="./src/images/logos/aws2.png"
                     alt="aws"
                     class="skill_card_image"
                   />

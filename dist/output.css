@@ -656,23 +656,59 @@ h1 {
 .skill_card {
   margin: 0.25rem;
   display: flex;
-  height: 188px;
-  width: 188px;
+  height: 180px;
+  width: 180px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   border-radius: 1.5rem;
   --tw-bg-opacity: 1;
+  background-color: rgb(71 85 105 / var(--tw-bg-opacity));
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  transition-duration: 300ms;
+}
+
+.skill_card:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(253 170 23 / var(--tw-bg-opacity));
+}
+
+.dark .skill_card {
+  --tw-bg-opacity: 1;
   background-color: rgb(61 62 66 / var(--tw-bg-opacity));
+}
+
+.dark .skill_card:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(240 190 109 / var(--tw-bg-opacity));
+}
+
+@media (min-width: 480px) {
+  .skill_card {
+    height: 220px;
+    width: 220px;
+  }
 }
 
 @media (min-width: 768px) {
   .skill_card {
     margin: 0.5rem;
+    height: 170px;
+    width: 170px;
   }
 }
 
 @media (min-width: 1024px) {
+  .skill_card {
+    margin: 1rem;
+    height: 224px;
+    width: 224px;
+  }
+}
+
+@media (min-width: 1280px) {
   .skill_card {
     margin: 1.25rem;
     height: 330px;
@@ -693,15 +729,70 @@ h1 {
 
 @media (min-width: 480px) {
   .skill_card_text {
-    font-size: 1.125rem;
+    font-size: 1.25rem;
     line-height: 1.75rem;
   }
 }
 
 @media (min-width: 768px) {
   .skill_card_text {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .skill_card_text {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+}
+
+.responsive_h1 {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+@media (min-width: 480px) {
+  .responsive_h1 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .responsive_h1 {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+}
+
+@media (min-width: 1024px) {
+  .responsive_h1 {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+}
+
+.section_padding {
+  padding-top: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .section_padding {
+    padding-top: 4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section_padding {
+    padding-top: 7rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .section_padding {
+    padding-top: 8rem;
   }
 }
 
@@ -1022,10 +1113,6 @@ h1 {
 
 .pl-8 {
   padding-left: 2rem;
-}
-
-.pt-32 {
-  padding-top: 8rem;
 }
 
 .pb-8 {
@@ -1354,5 +1441,10 @@ h1 {
   .lg\:text-8xl {
     font-size: 6rem;
     line-height: 1;
+  }
+
+  .lg\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 }

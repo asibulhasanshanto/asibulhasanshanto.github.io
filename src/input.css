@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 /* create layers */
 @layer base {
   h1 {
@@ -13,26 +12,31 @@
 
 @layer components {
   /* create a compopnent named nav_button */
-    .nav_button {
-        @apply dark:text-nav_button-dark hover:text-primary-light_hover  dark:hover:text-white ease-in-out duration-300; ;
-    }
-    .header_social_list{
-        @apply sm:w-6 sm:h-6 md:h-8 md:w-8 text-black dark:text-white;
-    }
-    .skill_cards_container{
-        @apply w-full flex  justify-center items-center;
-    }
-    .skill_card{
-        @apply w-[188px] h-[188px]  lg:w-[330px] lg:h-[330px] bg-card-dark flex flex-col rounded-3xl justify-center items-center m-1 md:m-2 lg:m-5;
-    }
-    .skill_card_image{
-        @apply h-1/4 ;
-    }
-    .skill_card_text{
-        @apply text-center text-white sm:text-lg md:text-2xl mt-7;
-    }
+  .nav_button {
+    @apply dark:text-nav_button-dark hover:text-primary-light_hover  dark:hover:text-white ease-in-out duration-300;
+  }
+  .header_social_list {
+    @apply sm:w-6 sm:h-6 md:h-8 md:w-8 text-black dark:text-white;
+  }
+  .skill_cards_container {
+    @apply w-full flex  justify-center items-center;
+  }
+  .skill_card {
+    @apply  shadow-lg h-[180px] w-[180px] sm:h-[220px] sm:w-[220px] md:w-[170px] md:h-[170px] lg:h-[224px] lg:w-[224px]  xl:w-[330px] xl:h-[330px] dark:hover:bg-primary_hover-dark bg-slate-600 hover:bg-primary-light dark:bg-card-dark  flex flex-col rounded-3xl justify-center items-center m-1 md:m-2 lg:m-4 xl:m-5 duration-300;
+  }
+  .skill_card_image {
+    @apply h-1/4;
+  }
+  .skill_card_text {
+    @apply text-center text-white sm:text-xl md:text-xl lg:text-2xl mt-7;
+  }
+  .responsive_h1{
+    @apply text-3xl sm:text-4xl md:text-6xl lg:text-7xl;
+  }
+  .section_padding{
+    @apply pt-10 md:pt-16 lg:pt-28 xl:pt-32;
+  }
 }
 
 @layer utilities {
-  
 }
