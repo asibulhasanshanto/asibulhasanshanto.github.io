@@ -593,7 +593,7 @@
         id="portfolio"
       >
         <div
-          class="container pb-36 relative mx-auto flex flex-col justify-center items-center"
+          class="container pb-8 sm:pb-10 md:pb-24 lg:pb-36 relative mx-auto flex flex-col justify-center items-center"
         >
           <h1 class="responsive_h1 mx-auto font-sourceSerifPro pb-8 z-[2]">
             Portfolio
@@ -884,12 +884,16 @@
         id="experience "
       >
         <div class="container mx-auto">
-          <h1 class="responsive_h1 font-sourceSerifPro text-black dark:text-white pb-2 sm:pb-4 md:pb-8">
+          <h1
+            class="responsive_h1 font-sourceSerifPro text-black dark:text-white pb-2 sm:pb-4 md:pb-8"
+          >
             Experience
           </h1>
         </div>
       </section>
-      <section class="section bg-bg_2-light dark:bg-bg_2-dark pb-10">
+      <section
+        class="section bg-bg_2-light dark:bg-bg_2-dark pb-4 md:pb-8 lg:pb-10"
+      >
         <div class="container mx-auto pt-12 md:pt-20">
           <!-- first paragraph -->
           <div class="experience_content flex w-full mb-16">
@@ -986,6 +990,68 @@
                 </p>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- testimonial section -->
+      <section
+        class="testimonial flex flex-col xl:flex-row justify-end w-full bg-bg_1-light dark:bg-bg_1-dark"
+      >
+        <div
+          class="testimonial_left flex flex-col py-8 md:py-12 lg:py-20 xl:py-0 container mx-auto w-auto items-start justify-center xl:pr-10 xl:pl-36"
+        >
+          <h1 class="responsive_h1 text-white font-sourceSerifPro mb-8">
+            Testimonial
+          </h1>
+          <div class="testimonial_paragraph_container flex">
+            <div
+              class="testimonial_p_hr h-[3px] bg-primary-dark w-28 lg:w-64 mt-1 mr-2 lg:mr-5"
+            ></div>
+            <div class="testimonial_pragraph flex flex-col">
+              <p
+                class="text-black dark:text-white texl-lg sm:text-xl md:text-2xl lg:text-3xl font-light leading-snug pb-8"
+              >
+                <span class="text-primary-light dark:text-primary-dark"
+                  >The design quality,</span
+                >
+                flexibility,documentation and support are all absolutely
+                <span class="text-primary-light dark:text-primary-dark"
+                  >excellent.</span
+                >
+                I buy the Avada theme for all my clients, knowing that whatever
+                they require,Avada will be able to deliver.
+              </p>
+              <div class="testimonial_signature">
+                <h2
+                  class="text-black dark:text-white texl-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold"
+                >
+                  Josef Sharon
+                </h2>
+                <div class="flex items-center">
+                  <hr
+                    class="h-[3px] w-5 bg-primary-light dark:bg-primary-dark m-0 p-0"
+                  />
+                  <p class="pl-2 text-black dark:text-white text-xl">
+                    CEO, Omisoft
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="testimonial_right flex justify-end items-center pt-16 md:pt-28 md:pb-20 lg:pt-52 lg:pb-28"
+        >
+          <div
+            class="testimonial_image_container sm:w-[25rem] md:w-[40rem] lg:w-[50rem] xl:w-[35rem] flex justify-center bg-primary-dark relative rounded-tl-[6rem] rounded-bl-[6rem]"
+          >
+            <img
+              src="./src/images/person/final person 2.png"
+              alt=""
+              class="absolte bottom-0 -mt-24 md:-mt-40 lg:-mt-52 xl:-mt-40 w-[20rem] md:w-[50rem] lg:w-[40rem] xl:w-[30rem] pl-10 object-cover"
+            />
           </div>
         </div>
       </section>
