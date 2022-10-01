@@ -35,7 +35,7 @@
               </a>
             </div>
 
-            <!-- nav links (also mobile menu) -->
+            <!-- nav links (also mobile menu) .row in large screen and col in mobile screen  -->
             <div
               class="mobile_menu hidden z-40 md:flex absolute w-full left-0 top-20 md:static md:w-auto items-center justify-center"
               id="mobile_menu"
@@ -54,8 +54,10 @@
                 </li>
               </ul>
             </div>
-            <div class="dark_mode flex z-50 justify-center items-center">
-              <!-- input box named search -->
+
+            <!-- search box and other buttons of nav -->
+            <div class="flex z-50 justify-center items-center">
+              <!-- search box -->
               <div
                 class="search flex items-center justify-center w-24 md:w-32 relative"
               >
@@ -175,11 +177,13 @@
             </div>
           </div>
         </nav>
+
         <!-- header content -->
 
         <div
           class="container 3xl:relative mx-auto flex justify-center items-center h-[70%] lg:h-[80%]"
         >
+          <!-- header text contents -->
           <div
             class="text_contents pl-8 text-black dark:text-white w-[80%] md:w-[60%] lg:w-[50%] text-lg sm:text-xl md:text-3xl lg:text-4xl"
           >
@@ -200,6 +204,8 @@
               Contact Me
             </button>
           </div>
+
+          <!-- header image -->
           <div class="imae w-1/2">
             <img
               cla
@@ -289,7 +295,9 @@
           >
             <h1 class="responsive_h1 font-sourceSerifPro mb-4">My Skills</h1>
 
+            <!-- ============================================== -->
             <!-- skill cards in large,extra large and medium screen -->
+            <!-- ==================================================== -->
             <div class="skils_card_large_screen hidden md:flex flex-col w-full">
               <!-- row 1 with 4 cards -->
               <div class="skill_cards_container">
@@ -432,7 +440,9 @@
               </div>
             </div>
 
+            <!-- ============================================== -->
             <!-- skill cards in small and extra small screen -->
+            <!-- ==================================================== -->
             <div class="skill_card_small_screen flex flex-col w-full md:hidden">
               <!-- row 1 with 2 cards -->
               <div class="skill_cards_container">
@@ -598,6 +608,7 @@
           <h1 class="responsive_h1 mx-auto font-sourceSerifPro pb-8 z-[2]">
             Portfolio
           </h1>
+          <!-- portfolio items -->
           <div
             class="portfolio_card_container z-[2] w-full px-10 pb-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-7"
           >
@@ -848,13 +859,15 @@
               </div>
             </div>
           </div>
+
+          <!-- see more button -->
           <button
             class="primary_btn px-4 py-2 text-xl md:px-8 md:py-4 font-bold md:text-2xl rounded-lg"
           >
             View More
           </button>
 
-          <!-- the background balls of portfolio section -->
+          <!-- the background balls structure of portfolio section -->
           <div
             class="portfolio_balls absolute right-10 -top-32 md:right-12 lg:right-16 md:-top-36 lg:-top-52 grid grid-cols-4 grid-row-4 gap-x-6 gap-y-8 md:gap-x-10 md:gap-y-12 lg:gap-x-12 lg:gap-y-20"
           >
@@ -1197,9 +1210,14 @@
         </div>
       </section>
 
-      <section class="footer bg:bg-bg_1-light dark:bg-bg_1-dark pt-10 pb-12 sm:pt-12 sm:pb-20 md:pt-16 md:pb:24 lg:pt-20 lg:pb-48">
+      <!-- footer section -->
+      <section
+        class="footer bg:bg-bg_1-light dark:bg-bg_1-dark pt-10 pb-12 sm:pt-12 sm:pb-20 md:pt-16 md:pb:24 lg:pt-20 lg:pb-48"
+      >
         <div class="container mx-auto flex justify-center">
-          <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl">"Thanks for scrolling"</h2>
+          <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
+            "Thanks for scrolling"
+          </h2>
         </div>
       </section>
     </div>
