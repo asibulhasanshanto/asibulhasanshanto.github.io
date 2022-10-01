@@ -1816,20 +1816,8 @@ h1 {
   padding-left: 2.5rem;
 }
 
-.pt-20 {
-  padding-top: 5rem;
-}
-
-.pb-48 {
-  padding-bottom: 12rem;
-}
-
 .pt-10 {
   padding-top: 2.5rem;
-}
-
-.pb-16 {
-  padding-bottom: 4rem;
 }
 
 .font-asap {
@@ -2457,11 +2445,6 @@ h1 {
 
   .lg\:text-5xl {
     font-size: 3rem;
-    line-height: 1;
-  }
-
-  .lg\:text-7xl {
-    font-size: 4.5rem;
     line-height: 1;
   }
 }
