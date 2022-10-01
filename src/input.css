@@ -11,7 +11,6 @@
     font-size: 3.5rem;
     font-weight: 700;
   }
-  
 }
 
 @layer components {
@@ -64,8 +63,21 @@
   .portfolio_card_hover_btn {
     @apply flex items-center justify-center px-3 py-1 sm:px-2 sm:text-sm md:text-lg md:px-3 rounded-lg;
   }
-  .ball{
-    @apply bg-primary-dark dark:bg-balls_color rounded-full z-0 ;
+  .ball {
+    @apply bg-primary-dark dark:bg-balls_color rounded-full z-0;
+  }
+
+  .experience_arrow_rectangle {
+    @apply h-[24px] sm:h-[36px] md:h-[44px] lg:h-[50px] w-10 sm:w-14 md:w-16 lg:w-20 flex items-center justify-end pr-1 lg:pr-2 bg-experience_arrow;
+  }
+  .experience_arrow_triangle {
+    @apply h-0 w-0 border-y-[12px] sm:border-y-[18px] md:border-y-[22px] lg:border-y-[25px] border-y-transparent border-l-[18px] sm:border-l-[25px] border-l-experience_arrow;
+  }
+  .experience_ball {
+    @apply h-3 w-3 sm:h-5 sm:w-5 lg:h-7 lg:w-7 rounded-full bg-primary-dark -mr-[10px] lg:-mr-[15px] mt-2 md:mt-3 lg:mt-4 shadow-[0_0_10px_10px_#6b5c4a];
+  }
+  .experience_paragraph_container {
+    @apply border-l-2 md:border-l-[3px] lg:border-l-4 pl-8 md:pl-12 mt-4 border-black dark:border-white;
   }
 }
 

@@ -51,7 +51,9 @@ module.exports = {
           dark:'#3d3e42'
         },
         balls_color: "#6b5c4a",
+        experience_arrow:'#5c5e63'
       },
+      
     },
   },
   plugins: [
