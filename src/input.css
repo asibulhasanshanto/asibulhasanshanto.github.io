@@ -25,7 +25,7 @@
     @apply w-full flex  justify-center items-center;
   }
   .skill_card {
-    @apply z-[2] shadow-lg h-[180px] w-[180px] sm:h-[220px] sm:w-[220px] md:w-[170px] md:h-[170px] lg:h-[224px] lg:w-[224px]  xl:w-[330px] xl:h-[330px] dark:hover:bg-primary_hover-dark bg-slate-600 hover:bg-primary-light dark:bg-card-dark  flex flex-col rounded-3xl justify-center items-center m-1 md:m-2 lg:m-4 xl:m-5 duration-300;
+    @apply z-[2] shadow-lg h-[180px] w-[180px] sm:h-[220px] sm:w-[220px] md:w-[170px] md:h-[170px] lg:h-[224px] lg:w-[224px]  xl:w-[330px] xl:h-[330px] dark:hover:bg-primary_hover-dark bg-card-light hover:bg-primary-light dark:bg-card-dark  flex flex-col rounded-3xl justify-center items-center m-1 md:m-2 lg:m-4 xl:m-5 duration-300;
   }
   .skill_card_image {
     @apply h-1/4;
@@ -43,7 +43,7 @@
     @apply h-[300px] sm:h-[200px] md:h-[380px] xl:h-[430px] relative;
   }
   .primary_btn {
-    @apply bg-primary-dark text-bg_1-dark hover:bg-primary-light_hover duration-300 ease-in-out;
+    @apply bg-primary-light dark:bg-primary-dark text-white dark:text-bg_1-dark hover:bg-primary-light_hover duration-300 ease-in-out;
   }
   .portfolio_card_bg_img {
     @apply object-cover h-full w-full;
@@ -74,7 +74,7 @@
     @apply h-0 w-0 border-y-[12px] sm:border-y-[18px] md:border-y-[22px] lg:border-y-[25px] border-y-transparent border-l-[18px] sm:border-l-[25px] border-l-experience_arrow;
   }
   .experience_ball {
-    @apply h-3 w-3 sm:h-5 sm:w-5 lg:h-7 lg:w-7 rounded-full bg-primary-dark -mr-[10px] lg:-mr-[15px] mt-2 md:mt-3 lg:mt-4 shadow-[0_0_10px_10px_#6b5c4a];
+    @apply h-3 w-3 sm:h-5 sm:w-5 lg:h-7 lg:w-7 rounded-full bg-primary-light dark:bg-primary-dark -mr-[10px] lg:-mr-[15px] mt-2 md:mt-3 lg:mt-4 shadow-[0_0_10px_10px_#fec96b] dark:shadow-[0_0_10px_10px_#6b5c4a];
   }
   .experience_paragraph_container {
     @apply border-l-2 md:border-l-[3px] lg:border-l-4 pl-8 md:pl-12 mt-4 border-black dark:border-white;

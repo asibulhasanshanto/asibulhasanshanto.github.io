@@ -14,12 +14,12 @@ module.exports = {
     },
     extend: {
       padding: {
-        '1/2': '50%',
-        full: '100%',
+        "1/2": "50%",
+        full: "100%",
       },
       screens: {
         sm: "480px",
-        '3xl': "2000px",
+        "3xl": "2000px",
       },
       fontFamily: {
         sourceSerifPro: ["Source Serif Pro", "serif"],
@@ -30,7 +30,7 @@ module.exports = {
         primary: {
           dark: "#fec96b",
           light: "#fdaa17",
-          light_hover:'#cf8501'
+          light_hover: "#cf8501",
         },
         primary_hover: {
           dark: "#f0be6d",
@@ -40,23 +40,23 @@ module.exports = {
         },
         bg_1: {
           dark: "#30333a",
+          light: "#fff",
         },
         bg_2: {
           dark: "#3d3e42",
+          light: "#f1f2f3",
         },
         nav_button: {
           dark: "#a0a1a1",
         },
-        card:{
-          dark:'#3d3e42'
+        card: {
+          dark: "#3d3e42",
+          light: "#444",
         },
         balls_color: "#6b5c4a",
-        experience_arrow:'#5c5e63'
+        experience_arrow: "#5c5e63",
       },
-      
     },
   },
-  plugins: [
-    require('@tailwindcss/line-clamp'),
-  ],
+  plugins: [require("@tailwindcss/line-clamp")],
 };
