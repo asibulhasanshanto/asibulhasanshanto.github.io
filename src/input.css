@@ -79,6 +79,27 @@
   .experience_paragraph_container {
     @apply border-l-2 md:border-l-[3px] lg:border-l-4 pl-8 md:pl-12 mt-4 border-black dark:border-white;
   }
+  .contact_card {
+    @apply h-16 w-80 md:h-20 md:w-96 rounded-lg bg-bg_1-light dark:bg-bg_1-dark flex m-2 items-center;
+  }
+  .contact_card_icon {
+    @apply w-6 h-6 md:w-9 md:h-9  text-black dark:text-white mx-6;
+  }
+  .contact_card_row {
+    @apply flex flex-col md:flex-row w-full justify-center items-center;
+  }
+  .contact_card_text {
+    @apply text-primary-light dark:text-primary-dark text-xl md:text-2xl font-bold;
+  }
+  .contact_border_lr {
+    @apply bg-primary-light dark:bg-primary-dark h-1 w-[27%] lg:w-[30%] xl:w-[35%];
+  }
+  .contact_border_middle {
+    @apply flex justify-center w-[46%] lg:w-[40%] xl:w-[30%];
+  }
+  .contact_bottom_social_links{
+    @apply h-7 w-7 md:h-10 md:w-10 py-0 sm:py-1 md:py-3 text-black dark:text-white
+  }
 }
 
 @layer utilities {
