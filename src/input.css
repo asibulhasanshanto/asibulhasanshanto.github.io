@@ -25,7 +25,7 @@
     @apply w-full flex  justify-center items-center;
   }
   .skill_card {
-    @apply z-[2] shadow-lg h-[180px] w-[180px] sm:h-[220px] sm:w-[220px] md:w-[170px] md:h-[170px] lg:h-[224px] lg:w-[224px]  xl:w-[330px] xl:h-[330px] dark:hover:bg-primary_hover-dark bg-card-light hover:bg-primary-light dark:bg-card-dark  flex flex-col rounded-3xl justify-center items-center m-1 md:m-2 lg:m-4 xl:m-5 duration-300;
+    @apply z-[2] shadow-lg h-[145px] w-[145px] sm:h-[220px] sm:w-[220px] md:w-[170px] md:h-[170px] lg:h-[224px] lg:w-[224px] xl:w-[260px] xl:h-[260px]  2xl:w-[330px] 2xl:h-[330px] dark:hover:bg-primary_hover-dark bg-card-light hover:bg-primary-light dark:bg-card-dark  flex flex-col rounded-3xl justify-center items-center m-1 md:m-2 lg:m-4 xl:m-5 duration-300;
   }
   .skill_card_image {
     @apply h-1/4;
@@ -97,8 +97,8 @@
   .contact_border_middle {
     @apply flex justify-center w-[46%] lg:w-[40%] xl:w-[30%];
   }
-  .contact_bottom_social_links{
-    @apply h-7 w-7 md:h-10 md:w-10 py-0 sm:py-1 md:py-3 text-black dark:text-white
+  .contact_bottom_social_links {
+    @apply h-7 w-7 md:h-10 md:w-10 py-0 sm:py-1 md:py-3 text-black dark:text-white;
   }
 }
 
