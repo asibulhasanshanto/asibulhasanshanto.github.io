@@ -28,8 +28,10 @@ module.exports = {
       },
       colors: {
         primary: {
-          dark: "#fec96b",
+          // dark: "#fec96b",
+          dark: "#6bfe9e",
           light: "#fdaa17",
+          // light: "#17fd39",
           light_hover: "#cf8501",
         },
         primary_hover: {
