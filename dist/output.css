@@ -1143,7 +1143,7 @@ h1 {
 @media (min-width: 768px) {
   .contact_card {
     height: 5rem;
-    width: 24rem;
+    width: 420px;
   }
 }
 
@@ -1597,6 +1597,10 @@ h1 {
 
 .w-\[20rem\] {
   width: 20rem;
+}
+
+.grow {
+  flex-grow: 1;
 }
 
 .grid-cols-4 {

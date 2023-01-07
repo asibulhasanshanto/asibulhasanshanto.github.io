@@ -80,7 +80,7 @@
     @apply border-l-2 md:border-l-[3px] lg:border-l-4 pl-8 md:pl-12 mt-4 border-black dark:border-white;
   }
   .contact_card {
-    @apply h-16 w-80 md:h-20 md:w-96 rounded-lg bg-bg_1-light dark:bg-bg_1-dark flex m-2 items-center;
+    @apply h-16 w-80 md:h-20 md:w-[420px] rounded-lg bg-bg_1-light dark:bg-bg_1-dark flex m-2 items-center;
   }
   .contact_card_icon {
     @apply w-6 h-6 md:w-9 md:h-9  text-black dark:text-white mx-6;
