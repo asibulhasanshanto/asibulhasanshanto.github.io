@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* create layers */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+  }
+}
+
+@layer components {
+  /* create a compopnent named nav_button */
+  .nav_button {
+    @apply dark:text-nav_button-dark hover:text-primary-light_hover  dark:hover:text-white ease-in-out duration-300;
+  }
+  .header_social_list {
+    @apply sm:w-6 sm:h-6 md:h-8 md:w-8 text-black dark:text-white;
+  }
+  .skill_cards_container {
+    @apply w-full flex  justify-center items-center;
+  }
+  .skill_card {
+    @apply z-[2] shadow-lg h-[145px] w-[145px] sm:h-[220px] sm:w-[220px] md:w-[170px] md:h-[170px] lg:h-[224px] lg:w-[224px] xl:w-[260px] xl:h-[260px]  2xl:w-[330px] 2xl:h-[330px] dark:hover:bg-primary_hover-dark bg-card-light hover:bg-primary-light dark:bg-card-dark  flex flex-col rounded-3xl justify-center items-center m-1 md:m-2 lg:m-4 xl:m-5 duration-300;
+  }
+  .skill_card_image {
+    @apply h-1/4;
+  }
+  .skill_card_text {
+    @apply text-center text-white sm:text-xl md:text-xl lg:text-2xl mt-7;
+  }
+  .responsive_h1 {
+    @apply text-3xl sm:text-4xl md:text-6xl lg:text-7xl;
+  }
+  .section_padding {
+    @apply pt-10 md:pt-16 lg:pt-28 xl:pt-32;
+  }
+  .portfolio_card {
+    @apply h-[300px] sm:h-[200px] md:h-[380px] xl:h-[430px] relative;
+  }
+  .primary_btn {
+    @apply bg-primary-light dark:bg-primary-dark text-white dark:text-bg_1-dark hover:bg-primary-light_hover duration-300 ease-in-out;
+  }
+  .portfolio_card_bg_img {
+    @apply object-cover h-full w-full;
+  }
+  .portfolio_hover_cover {
+    @apply items-center justify-center absolute top-0 h-0 w-full backdrop-blur-sm bg-black/30 duration-300;
+  }
+  .portfolio_card_hover_content {
+    @apply flex-col justify-center items-center  duration-500  w-full text-white;
+  }
+  .portfolio_card_hover_h3 {
+    @apply font-bold text-2xl sm:text-xl md:text-3xl;
+  }
+  .portfolio_card_hover_p {
+    @apply w-[80%] sm:w-[90%] md:w-[70%] lg:w-[50%] font-light leading-none text-center text-sm sm:text-xs md:text-sm lg:text-lg mb-2 line-clamp-3;
+  }
+  .portfolio_card_hover_btn {
+    @apply flex items-center justify-center px-3 py-1 sm:px-2 sm:text-sm md:text-lg md:px-3 rounded-lg;
+  }
+  .ball {
+    @apply bg-primary-dark dark:bg-balls_color rounded-full z-0;
+  }
+
+  .experience_arrow_rectangle {
+    @apply h-[24px] sm:h-[36px] md:h-[44px] lg:h-[50px] w-10 sm:w-14 md:w-16 lg:w-20 flex items-center justify-end pr-1 lg:pr-2 bg-experience_arrow;
+  }
+  .experience_arrow_triangle {
+    @apply h-0 w-0 border-y-[12px] sm:border-y-[18px] md:border-y-[22px] lg:border-y-[25px] border-y-transparent border-l-[18px] sm:border-l-[25px] border-l-experience_arrow;
+  }
+  .experience_ball {
+    @apply h-3 w-3 sm:h-5 sm:w-5 lg:h-7 lg:w-7 rounded-full bg-primary-light dark:bg-primary-dark -mr-[10px] lg:-mr-[15px] mt-2 md:mt-3 lg:mt-4 shadow-[0_0_10px_10px_#fec96b] dark:shadow-[0_0_10px_10px_#6b5c4a];
+  }
+  .experience_paragraph_container {
+    @apply border-l-2 md:border-l-[3px] lg:border-l-4 pl-8 md:pl-12 mt-4 border-black dark:border-white;
+  }
+  .contact_card {
+    @apply h-16 w-80 md:h-20 md:w-[420px] rounded-lg bg-bg_1-light dark:bg-bg_1-dark flex m-2 items-center;
+  }
+  .contact_card_icon {
+    @apply w-6 h-6 md:w-9 md:h-9  text-black dark:text-white mx-6;
+  }
+  .contact_card_row {
+    @apply flex flex-col md:flex-row w-full justify-center items-center;
+  }
+  .contact_card_text {
+    @apply text-primary-light dark:text-primary-dark text-xl md:text-2xl font-bold;
+  }
+  .contact_border_lr {
+    @apply bg-primary-light dark:bg-primary-dark h-1 w-[27%] lg:w-[30%] xl:w-[35%];
+  }
+  .contact_border_middle {
+    @apply flex justify-center w-[46%] lg:w-[40%] xl:w-[30%];
+  }
+  .contact_bottom_social_links {
+    @apply h-7 w-7 md:h-10 md:w-10 py-0 sm:py-1 md:py-3 text-black dark:text-white;
+  }
+}
+
+@layer utilities {
+}
