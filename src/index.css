@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .category-card {
+    @apply hover:shadow-md transition-all duration-300 cursor-pointer bg-gray-100 border mx-auto w-full  max-w-[380px];
+  }
+}
