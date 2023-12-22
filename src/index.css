@@ -5,8 +5,16 @@
   html {
     height: 100vh;
     box-sizing: border-box;
+    scroll-behavior: smooth;
   }
 
+  body {
+    min-height: 100vh;
+    /* font-family: "font-asap", sans-serif; */
+    font-family: "Inter", sans-serif;
+    font-family: "Montserrat", sans-serif;
+    font-family: "Poppins", sans-serif;
+  }
   h1 {
     @apply text-4xl;
   }
@@ -35,9 +43,9 @@
 
 @layer components {
   body {
-    @apply bg-bg dark:bg-bg_dark;
+    @apply no-scrollbar bg-bg dark:bg-bg_dark;
   }
   .container {
-    @apply mx-auto max-w-[88rem] px-4 sm:px-6 lg:px-8;
+    @apply mx-auto max-w-[70rem] px-4 sm:px-6 lg:px-8;
   }
 }
